@@ -1,0 +1,1 @@
+This folder will be used to hold all image files for the website. 

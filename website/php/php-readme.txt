@@ -1,0 +1,1 @@
+This folder will be used to hold PHP files for the website. 

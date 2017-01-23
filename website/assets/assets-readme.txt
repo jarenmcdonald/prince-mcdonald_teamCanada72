@@ -1,0 +1,1 @@
+This folder will be used to hold all file assets for the website. 
