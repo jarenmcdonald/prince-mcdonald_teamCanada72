@@ -6,6 +6,55 @@ $primaryGray: #202020;
 $secondaryGray: #e1e1e1;
 $primaryWhite: #fafafa;
 
+$gentiumBook: 'gentium_book_basicregular', Times, serif;
+$openSans: 'open_sansregular', Helvetica, Arial, sans-serif;
+$openSansExtraBold: 'open_sansextrabold', Helvetica, Arial, sans-serif;
+$openSansLight: 'open_sanslight', Helvetica, Arial, sans-serif;
+ $openSansSemiBold: 'open_sanssemibold', Helvetica, Arial, sans-serif;
+
+
+/*Fonts*/
+
+
+@font-face {
+    font-family: 'gentium_book_basicregular';
+    src: url("..assets/fonts/webfontkit-genB/'genbkbasr-webfont.woff2'") format('woff2'),
+         url("..assets/fonts/webfontkit-genB/'genbkbasr-webfont.woff'") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url("..assets/fonts/webfontkit-openS/'opensans-extrabold-webfont.woff2 ") format('woff2'),
+         url("..assets/fonts/webfontkit-openS/'opensans-extrabold-webfont.woff'") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url("..assets/fonts/webfontkit-openS/'opensans-light-webfont.woff2'") format('woff2'),
+         url("..assets/fonts/webfontkit-openS/'opensans-light-webfont.woff'") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url("..assets/fonts/webfontkit-openS/'opensans-regular-webfont.woff2'") format('woff2'),
+         url("..assets/fonts/webfontkit-openS/'opensans-regular-webfont.woff'") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url("..assets/fonts/webfontkit-openS/'opensans-semibold-webfont.woff2'") format('woff2'),
+         url("..assets/fonts/webfontkit-openS/'opensans-semibold-webfont.woff'") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 body {
@@ -18,6 +67,7 @@ body {
   background-color: $primaryRed;
   height: 200px;
   width: 200px;
+  font-family: $gentiumBook;
 }
 
 #secondaryRed {
@@ -25,6 +75,7 @@ body {
   background-color: $secondaryRed;
   height: 200px;
   width: 200px;
+  font-family: $openSans;
 }
 
 #primaryGray {
@@ -32,6 +83,7 @@ body {
   background-color: $primaryGray;
   height: 200px;
   width: 200px;
+  font-family: $openSansLight;
 }
 
 #secondaryGray {
@@ -39,6 +91,7 @@ body {
   background-color: $secondaryGray;
   height: 200px;
   width: 200px;
+  font-family: $openSansExtraBold;
 }
 
 #primaryWhite {
@@ -46,4 +99,5 @@ body {
   background-color: $primaryWhite;
   height: 200px;
   width: 200px;
+  font-family: $openSansSemiBold;
 }
