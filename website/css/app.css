@@ -24,6 +24,7 @@
   src: url("..assets/fonts/webfontkit-openS/'opensans-semibold-webfont.woff2'") format("woff2"), url("..assets/fonts/webfontkit-openS/'opensans-semibold-webfont.woff'") format("woff");
   font-weight: normal;
   font-style: normal; }
+/*Body*/
 body {
   color: #FFF; }
 
