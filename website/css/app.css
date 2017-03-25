@@ -27,41 +27,13 @@
 /*Body*/
 body {
   color: #FFF;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  background-color: #00f0df; }
 
-#primaryRed {
-  color: #fff;
-  background-color: #d4222a;
-  height: 200px;
-  width: 200px;
-  font-family: "gentium_book_basicregular", Times, serif; }
+/*Overall Classes*/
+.hidden {
+  display: none; }
 
-#secondaryRed {
-  color: #fff;
-  background-color: #651014;
-  height: 200px;
-  width: 200px;
-  font-family: "open_sansregular", Helvetica, Arial, sans-serif; }
-
-#primaryGray {
-  color: #fff;
-  background-color: #202020;
-  height: 200px;
-  width: 200px;
-  font-family: "open_sanslight", Helvetica, Arial, sans-serif; }
-
-#secondaryGray {
-  color: #651014;
-  background-color: #e1e1e1;
-  height: 200px;
-  width: 200px;
-  font-family: "open_sansextrabold", Helvetica, Arial, sans-serif; }
-
-#primaryWhite {
-  color: #d4222a;
-  background-color: #fafafa;
-  height: 200px;
-  width: 200px;
-  font-family: "open_sanssemibold", Helvetica, Arial, sans-serif; }
+/*Navigation*/
 
 /*# sourceMappingURL=app.css.map */

@@ -61,45 +61,12 @@ $openSansSemiBold: 'open_sanssemibold', Helvetica, Arial, sans-serif;
 body {
     color: #FFF;
     font-size: 1.5em;
+    background-color: #00f0df;
 }
 
-
-#primaryRed {
-  color: #fff;
-  background-color: $primaryRed;
-  height: 200px;
-  width: 200px;
-  font-family: $gentiumBook;
+/*Overall Classes*/
+  .hidden {
+  display: none;
 }
 
-#secondaryRed {
-  color: #fff;
-  background-color: $secondaryRed;
-  height: 200px;
-  width: 200px;
-  font-family: $openSans;
-}
-
-#primaryGray {
-  color: #fff;
-  background-color: $primaryGray;
-  height: 200px;
-  width: 200px;
-  font-family: $openSansLight;
-}
-
-#secondaryGray {
-  color: $secondaryRed;
-  background-color: $secondaryGray;
-  height: 200px;
-  width: 200px;
-  font-family: $openSansExtraBold;
-}
-
-#primaryWhite {
-  color: $primaryRed;
-  background-color: $primaryWhite;
-  height: 200px;
-  width: 200px;
-  font-family: $openSansSemiBold;
-}
+/*Navigation*/
