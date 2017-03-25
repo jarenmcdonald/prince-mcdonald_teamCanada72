@@ -1,5 +1,49 @@
 //SASS Document
 
+$primaryRed: #d4222a;
+$secondaryRed: #651014;
+$primaryGray: #202020;
+$secondaryGray: #e1e1e1;
+$primaryWhite: #fafafa;
+
+
+
 body {
     color: #FFF;
+}
+
+
+#primaryRed {
+  color: #fff;
+  background-color: $primaryRed;
+  height: 200px;
+  width: 200px;
+}
+
+#secondaryRed {
+  color: #fff;
+  background-color: $secondaryRed;
+  height: 200px;
+  width: 200px;
+}
+
+#primaryGray {
+  color: #fff;
+  background-color: $primaryGray;
+  height: 200px;
+  width: 200px;
+}
+
+#secondaryGray {
+  color: $secondaryRed;
+  background-color: $secondaryGray;
+  height: 200px;
+  width: 200px;
+}
+
+#primaryWhite {
+  color: $primaryRed;
+  background-color: $primaryWhite;
+  height: 200px;
+  width: 200px;
 }

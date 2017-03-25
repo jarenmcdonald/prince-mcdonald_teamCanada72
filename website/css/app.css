@@ -1,4 +1,34 @@
 body {
   color: #FFF; }
 
+#primaryRed {
+  color: #fff;
+  background-color: #d4222a;
+  height: 200px;
+  width: 200px; }
+
+#secondaryRed {
+  color: #fff;
+  background-color: #651014;
+  height: 200px;
+  width: 200px; }
+
+#primaryGray {
+  color: #fff;
+  background-color: #202020;
+  height: 200px;
+  width: 200px; }
+
+#secondaryGray {
+  color: #651014;
+  background-color: #e1e1e1;
+  height: 200px;
+  width: 200px; }
+
+#primaryWhite {
+  color: #d4222a;
+  background-color: #fafafa;
+  height: 200px;
+  width: 200px; }
+
 /*# sourceMappingURL=app.css.map */
