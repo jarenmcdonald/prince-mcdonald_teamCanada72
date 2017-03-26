@@ -168,53 +168,54 @@ body {
 .extras p {
   font-size: .875em;
   color: #333;
-  line-height: 22px;
-  /*Navigation*/
-  /*Footer*/ }
-  .extras p #mainFooter {
-    background-color: #282828;
-    color: #c6c6c6; }
-    .extras p #mainFooter #officialSite {
-      margin-top: 50px;
-      margin-bottom: 50px; }
-      .extras p #mainFooter #officialSite p {
-        font-family: "gentium_book_basicregular", Times, serif;
-        font-size: 1em;
-        text-align: center; }
-    .extras p #mainFooter #footerSocial {
-      border-top: 1px solid #c6c6c6;
-      border-bottom: 1px solid #c6c6c6;
-      padding-top: 50px;
-      padding-bottom: 50px; }
-      .extras p #mainFooter #footerSocial ul {
-        text-align: center; }
-        .extras p #mainFooter #footerSocial ul li {
-          display: inline-block;
-          margin-right: 10px; }
-          .extras p #mainFooter #footerSocial ul li img {
-            max-width: 80%; }
-          .extras p #mainFooter #footerSocial ul li a:hover {
-            opacity: 0.5;
-            filter: alpha(opacity=50);
-            /* For IE8 and earlier */ }
-        .extras p #mainFooter #footerSocial ul li:last-child {
-          margin-right: 0px; }
-    .extras p #mainFooter #footerNav {
-      margin-top: 50px;
-      padding-bottom: 35px;
+  line-height: 22px; }
+
+/*Navigation*/
+/*Footer*/
+#mainFooter {
+  background-color: #282828;
+  color: #c6c6c6; }
+  #mainFooter #officialSite {
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    #mainFooter #officialSite p {
+      font-family: "gentium_book_basicregular", Times, serif;
+      font-size: 1em;
       text-align: center; }
-      .extras p #mainFooter #footerNav ul {
-        margin: 0; }
-        .extras p #mainFooter #footerNav ul li {
-          list-style-type: none;
-          margin-bottom: 15px; }
-          .extras p #mainFooter #footerNav ul li a {
-            color: #c6c6c6;
-            font-family: "open_sansregular", Helvetica, Arial, sans-serif;
-            font-size: 1.5em; }
-          .extras p #mainFooter #footerNav ul li a:hover {
-            opacity: 0.5;
-            filter: alpha(opacity=50);
-            /* For IE8 and earlier */ }
+  #mainFooter #footerSocial {
+    border-top: 1px solid #c6c6c6;
+    border-bottom: 1px solid #c6c6c6;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    #mainFooter #footerSocial ul {
+      text-align: center; }
+      #mainFooter #footerSocial ul li {
+        display: inline-block;
+        margin-right: 10px; }
+        #mainFooter #footerSocial ul li img {
+          max-width: 80%; }
+        #mainFooter #footerSocial ul li a:hover {
+          opacity: 0.5;
+          filter: alpha(opacity=50);
+          /* For IE8 and earlier */ }
+      #mainFooter #footerSocial ul li:last-child {
+        margin-right: 0px; }
+  #mainFooter #footerNav {
+    margin-top: 50px;
+    padding-bottom: 35px;
+    text-align: center; }
+    #mainFooter #footerNav ul {
+      margin: 0; }
+      #mainFooter #footerNav ul li {
+        list-style-type: none;
+        margin-bottom: 15px; }
+        #mainFooter #footerNav ul li a {
+          color: #c6c6c6;
+          font-family: "open_sansregular", Helvetica, Arial, sans-serif;
+          font-size: 1.5em; }
+        #mainFooter #footerNav ul li a:hover {
+          opacity: 0.5;
+          filter: alpha(opacity=50);
+          /* For IE8 and earlier */ }
 
 /*# sourceMappingURL=app.css.map */
