@@ -34,6 +34,11 @@ body {
 .hidden {
   display: none; }
 
+a:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */ }
+
 /*Main Page Elements*/
 #mainHeader {
   margin-bottom: 20px; }
@@ -194,10 +199,6 @@ body {
         margin-right: 10px; }
         #mainFooter #footerSocial ul li img {
           max-width: 60%; }
-        #mainFooter #footerSocial ul li a:hover {
-          opacity: 0.5;
-          filter: alpha(opacity=50);
-          /* For IE8 and earlier */ }
       #mainFooter #footerSocial ul li:last-child {
         margin-right: 0px; }
   #mainFooter #footerNav {
@@ -213,9 +214,11 @@ body {
           color: #c6c6c6;
           font-family: "open_sansregular", Helvetica, Arial, sans-serif;
           font-size: 1em; }
-        #mainFooter #footerNav ul li a:hover {
-          opacity: 0.5;
-          filter: alpha(opacity=50);
-          /* For IE8 and earlier */ }
+  #mainFooter #backBut {
+    text-align: center; }
+    #mainFooter #backBut a {
+      color: #c6c6c6;
+      font-size: 1.25em;
+      margin-bottom: 10px; }
 
 /*# sourceMappingURL=app.css.map */

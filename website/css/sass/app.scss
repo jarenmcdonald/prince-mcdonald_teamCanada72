@@ -69,6 +69,11 @@ body {
   display: none;
 }
 
+a:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
 
 
 
@@ -312,11 +317,6 @@ body {
                 img {
                     max-width: 60%;
                 }
-
-                a:hover {
-                    opacity: 0.5;
-                    filter: alpha(opacity=50); /* For IE8 and earlier */
-                }
             }
 
             li:last-child {
@@ -342,12 +342,17 @@ body {
                     font-family: $openSans;
                     font-size: 1em;
                 }
-
-                a:hover {
-                        opacity: 0.5;
-                        filter: alpha(opacity=50); /* For IE8 and earlier */
-                }
             }
+        }
+    }
+
+    #backBut {
+    text-align: center;
+
+        a {
+            color: #c6c6c6;
+            font-size: 1.25em;
+            margin-bottom: 10px;
         }
     }
 }
