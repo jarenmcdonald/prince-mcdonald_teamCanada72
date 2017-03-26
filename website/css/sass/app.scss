@@ -69,7 +69,29 @@ body {
   display: none;
 }
 
+<<<<<<< HEAD
 .redButton
+=======
+a:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+
+
+
+
+
+
+/*Main Page Elements*/
+
+#mainHeader
+{
+	margin-bottom: 20px;
+}
+
+.title-bar
+>>>>>>> origin/master
 {
   background-color: $primaryRed;
   width: 100%;
@@ -186,8 +208,9 @@ p {
     color: #c6c6c6;
 
     #officialSite {
+        border-bottom: 1px solid #c6c6c6;
         margin-top: 50px;
-        margin-bottom: 50px;
+        padding-bottom: 50px;
 
         p {
             font-family: $gentiumBook;
@@ -196,8 +219,11 @@ p {
         }
     }
 
+    #footerNav {
+        display: none;
+    }
+
     #footerSocial {
-        border-top: 1px solid #c6c6c6;
         border-bottom: 1px solid #c6c6c6;
         padding-top: 50px;
         padding-bottom: 50px;
@@ -212,11 +238,6 @@ p {
                 img {
                     max-width: 60%;
                 }
-
-                a:hover {
-                    opacity: 0.5;
-                    filter: alpha(opacity=50); /* For IE8 and earlier */
-                }
             }
 
             li:last-child {
@@ -225,7 +246,7 @@ p {
         }
     }
 
-    #footerNav {
+    #footerNavSmall {
         margin-top: 50px;
         padding-bottom: 35px;
         text-align: center;
@@ -242,12 +263,92 @@ p {
                     font-family: $openSans;
                     font-size: 1em;
                 }
+            }
+        }
+    }
 
-                a:hover {
-                        opacity: 0.5;
-                        filter: alpha(opacity=50); /* For IE8 and earlier */
+    #copyright {
+        display: none;
+    }
+
+    #backBut {
+    text-align: center;
+
+        a {
+            color: #c6c6c6;
+            font-size: 1.25em;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 40em) /*640px*/ {
+
+    #mainFooter {
+        #officialSite {
+            margin-top: 20px;
+            padding-bottom: 5px;
+
+            p {
+                font-size: .813em;
+            }
+        }
+
+        #footerNav {
+            display: block;
+            margin-top: 15px;
+            padding-bottom: 0px;
+            text-align: center;
+
+            ul {
+            margin: 0;
+
+                li {
+                    list-style-type: none;
+                    display: inline-block;
+                    margin-bottom: 0px;
+                    margin-right: 10px;
+
+                    a {
+                        font-size: .563em;
+                        color: #c6c6c6;
+                        font-size: .625em;
+                        font-family: $openSans;
+                    }
                 }
             }
+        }
+
+        #footerSocial {
+            border-top: none;
+            padding-top: 30px;
+            padding-bottom: 0px;
+            border-bottom: none;
+
+            img {
+                max-width: 50%;
+            }
+        }
+
+        #footerNavSmall {
+            display: none;
+        }
+
+        #copyright {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: block;
+            text-align: center;
+
+            p {
+                font-family: $gentiumBook;
+                font-size: .813em;
+            }
+        }
+
+        #backBut {
+            display: none;
         }
     }
 }

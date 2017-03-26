@@ -34,10 +34,105 @@ body {
 .hidden {
   display: none; }
 
+<<<<<<< HEAD
 .redButton, .whiteButton, .grayButton {
   background-color: #d4222a;
   width: 100%;
   padding: 18px;
+=======
+a:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */ }
+
+/*Main Page Elements*/
+#mainHeader {
+  margin-bottom: 20px; }
+
+.title-bar {
+  background-color: #FFF;
+  margin-bottom: 10px; }
+
+.title-bar .menu-icon {
+  margin-right: 0; }
+
+.menu-icon::after {
+  background: #0099CC;
+  box-shadow: 0 7px 0 #0099CC, 0 14px 0 #0099CC; }
+
+.menu-icon:hover::after {
+  background: #0099CC;
+  box-shadow: 0 7px 0 #0099CC, 0 14px 0 #0099CC; }
+
+#mainNav {
+  margin: 0;
+  list-style-type: none;
+  text-align: center; }
+
+#mainNav ul li a {
+  display: block;
+  color: #8EA76D;
+  padding: 5px 0 5px 0; }
+
+#mainNav li {
+  border-bottom: 1px solid #EFEFEF; }
+
+#mainNav li:first-child {
+  border-top: 1px solid #EFEFEF; }
+
+#mainNav li:last-child {
+  margin-bottom: 10px; }
+
+#searchForm {
+  margin-top: 20px; }
+
+#searchForm .button {
+  background: #8EA76D; }
+
+#searchForm .button:hover {
+  background: #215445; }
+
+/*Logo*/
+#wollastonLogo {
+  display: block;
+  max-width: 120px;
+  margin: 0 auto; }
+
+/*Pano Area*/
+#pano {
+  background-color: #CCC;
+  margin-bottom: 30px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#infoFrost {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px 0px 20px;
+  margin-top: 15px;
+  height: 270px; }
+
+#infoFrost h2 {
+  font-size: 1.1125em; }
+
+#infoFrost h3 {
+  letter-spacing: .25px;
+  font-size: .875em; }
+
+#infoFrost p {
+  font-size: .75em;
+  color: #090909;
+  margin-top: 10px; }
+
+#bookNow {
+  font-family: 'lustriaregular', Times, 'Times New Roman', sans-serif;
+  display: block;
+  color: #FFF;
+  background-color: #8FA771;
+  text-align: center;
+  width: 120px;
+  font-size: 1em;
+>>>>>>> origin/master
   margin-bottom: 20px;
   text-align: center;
   color: #fafafa;
@@ -119,14 +214,16 @@ body {
   background-color: #282828;
   color: #c6c6c6; }
   #mainFooter #officialSite {
+    border-bottom: 1px solid #c6c6c6;
     margin-top: 50px;
-    margin-bottom: 50px; }
+    padding-bottom: 50px; }
     #mainFooter #officialSite p {
       font-family: "gentium_book_basicregular", Times, serif;
       font-size: 1em;
       text-align: center; }
+  #mainFooter #footerNav {
+    display: none; }
   #mainFooter #footerSocial {
-    border-top: 1px solid #c6c6c6;
     border-bottom: 1px solid #c6c6c6;
     padding-top: 50px;
     padding-bottom: 50px; }
@@ -137,28 +234,71 @@ body {
         margin-right: 10px; }
         #mainFooter #footerSocial ul li img {
           max-width: 60%; }
-        #mainFooter #footerSocial ul li a:hover {
-          opacity: 0.5;
-          filter: alpha(opacity=50);
-          /* For IE8 and earlier */ }
       #mainFooter #footerSocial ul li:last-child {
         margin-right: 0px; }
-  #mainFooter #footerNav {
+  #mainFooter #footerNavSmall {
     margin-top: 50px;
     padding-bottom: 35px;
+    text-align: center; }
+    #mainFooter #footerNavSmall ul {
+      margin: 0; }
+      #mainFooter #footerNavSmall ul li {
+        list-style-type: none;
+        margin-bottom: 15px; }
+        #mainFooter #footerNavSmall ul li a {
+          color: #c6c6c6;
+          font-family: "open_sansregular", Helvetica, Arial, sans-serif;
+          font-size: 1em; }
+  #mainFooter #copyright {
+    display: none; }
+  #mainFooter #backBut {
+    text-align: center; }
+    #mainFooter #backBut a {
+      color: #c6c6c6;
+      font-size: 1.25em;
+      margin-bottom: 10px; }
+
+@media screen and (min-width: 40em) {
+  #mainFooter #officialSite {
+    margin-top: 20px;
+    padding-bottom: 5px; }
+    #mainFooter #officialSite p {
+      font-size: .813em; }
+  #mainFooter #footerNav {
+    display: block;
+    margin-top: 15px;
+    padding-bottom: 0px;
     text-align: center; }
     #mainFooter #footerNav ul {
       margin: 0; }
       #mainFooter #footerNav ul li {
         list-style-type: none;
-        margin-bottom: 15px; }
+        display: inline-block;
+        margin-bottom: 0px;
+        margin-right: 10px; }
         #mainFooter #footerNav ul li a {
+          font-size: .563em;
           color: #c6c6c6;
-          font-family: "open_sansregular", Helvetica, Arial, sans-serif;
-          font-size: 1em; }
-        #mainFooter #footerNav ul li a:hover {
-          opacity: 0.5;
-          filter: alpha(opacity=50);
-          /* For IE8 and earlier */ }
+          font-size: .625em;
+          font-family: "open_sansregular", Helvetica, Arial, sans-serif; }
+  #mainFooter #footerSocial {
+    border-top: none;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    border-bottom: none; }
+    #mainFooter #footerSocial img {
+      max-width: 50%; }
+  #mainFooter #footerNavSmall {
+    display: none; }
+  #mainFooter #copyright {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center; }
+    #mainFooter #copyright p {
+      font-family: "gentium_book_basicregular", Times, serif;
+      font-size: .813em; }
+  #mainFooter #backBut {
+    display: none; } }
 
 /*# sourceMappingURL=app.css.map */
