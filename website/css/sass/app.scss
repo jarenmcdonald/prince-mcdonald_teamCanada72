@@ -60,7 +60,7 @@ $openSansSemiBold: 'open_sanssemibold', Helvetica, Arial, sans-serif;
 
 body {
     color: #FFF;
-    font-size: 1.5em;
+    font-size: 16px;
     background-color: #00f0df;
 }
 
@@ -69,9 +69,114 @@ body {
   display: none;
 }
 
+.redButton
+{
+  background-color: $primaryRed;
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: $primaryWhite;
+  font-family: $openSans;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+.whiteButton
+{
+  @extend .redButton;
+  background-color: $primaryWhite;
+  color: $primaryRed;
+}
+
+.grayButton
+{
+  @extend .redButton;
+  background-color: $primaryGray;
+  color: $primaryWhite;
+  margin-top: 20px;
+}
 
 
 /*Navigation*/
+
+
+/*Summit Series Home*/
+#summitSeriesHome {
+  background-color: $primaryWhite;
+  color: $primaryGray;
+  font-size: 1.2em;
+  font-family: $gentiumBook;
+
+h2 {
+  color: $primaryRed;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+}
+
+
+/*Learn Home*/
+#learnHome {
+  background-color: $primaryRed;
+  color: $primaryWhite;
+  font-size: 1.2em;
+  font-family: $gentiumBook;
+
+h2 {
+  color: $primaryWhite;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+}
+
+/*Tour Home*/
+#tourHome {
+  background-color: black;
+  color: $primaryWhite;
+  font-size: 1.2em;
+  font-family: $gentiumBook;
+
+h2 {
+  color: $primaryWhite;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+}
+
+/*Botique Home*/
+#botiqueHome {
+  background-color: $primaryWhite;
+  color: $primaryGray;
+  font-size: 1.2em;
+  font-family: $gentiumBook;
+
+h2 {
+  color: $primaryRed;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+p {
+  text-align: center;
+  margin: 0px;
+}
+
+
+
+}
 
 
 /*Footer*/

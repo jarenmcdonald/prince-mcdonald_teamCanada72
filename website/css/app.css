@@ -27,14 +27,93 @@
 /*Body*/
 body {
   color: #FFF;
-  font-size: 1.5em;
+  font-size: 16px;
   background-color: #00f0df; }
 
 /*Overall Classes*/
 .hidden {
   display: none; }
 
+.redButton, .whiteButton, .grayButton {
+  background-color: #d4222a;
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fafafa;
+  font-family: "open_sansregular", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: .8em; }
+
+.whiteButton {
+  background-color: #fafafa;
+  color: #d4222a; }
+
+.grayButton {
+  background-color: #282828;
+  color: #fafafa;
+  margin-top: 20px; }
+
 /*Navigation*/
+/*Summit Series Home*/
+#summitSeriesHome {
+  background-color: #fafafa;
+  color: #282828;
+  font-size: 1.2em;
+  font-family: "gentium_book_basicregular", Times, serif; }
+  #summitSeriesHome h2 {
+    color: #d4222a;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+/*Learn Home*/
+#learnHome {
+  background-color: #d4222a;
+  color: #fafafa;
+  font-size: 1.2em;
+  font-family: "gentium_book_basicregular", Times, serif; }
+  #learnHome h2 {
+    color: #fafafa;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+/*Tour Home*/
+#tourHome {
+  background-color: black;
+  color: #fafafa;
+  font-size: 1.2em;
+  font-family: "gentium_book_basicregular", Times, serif; }
+  #tourHome h2 {
+    color: #fafafa;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+/*Botique Home*/
+#botiqueHome {
+  background-color: #fafafa;
+  color: #282828;
+  font-size: 1.2em;
+  font-family: "gentium_book_basicregular", Times, serif; }
+  #botiqueHome h2 {
+    color: #d4222a;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  #botiqueHome p {
+    text-align: center;
+    margin: 0px; }
+
 /*Footer*/
 #mainFooter {
   background-color: #282828;
