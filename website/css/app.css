@@ -181,14 +181,16 @@ a:hover {
   background-color: #282828;
   color: #c6c6c6; }
   #mainFooter #officialSite {
+    border-bottom: 1px solid #c6c6c6;
     margin-top: 50px;
-    margin-bottom: 50px; }
+    padding-bottom: 50px; }
     #mainFooter #officialSite p {
       font-family: "gentium_book_basicregular", Times, serif;
       font-size: 1em;
       text-align: center; }
+  #mainFooter #footerNav {
+    display: none; }
   #mainFooter #footerSocial {
-    border-top: 1px solid #c6c6c6;
     border-bottom: 1px solid #c6c6c6;
     padding-top: 50px;
     padding-bottom: 50px; }
@@ -201,24 +203,69 @@ a:hover {
           max-width: 60%; }
       #mainFooter #footerSocial ul li:last-child {
         margin-right: 0px; }
-  #mainFooter #footerNav {
+  #mainFooter #footerNavSmall {
     margin-top: 50px;
     padding-bottom: 35px;
     text-align: center; }
-    #mainFooter #footerNav ul {
+    #mainFooter #footerNavSmall ul {
       margin: 0; }
-      #mainFooter #footerNav ul li {
+      #mainFooter #footerNavSmall ul li {
         list-style-type: none;
         margin-bottom: 15px; }
-        #mainFooter #footerNav ul li a {
+        #mainFooter #footerNavSmall ul li a {
           color: #c6c6c6;
           font-family: "open_sansregular", Helvetica, Arial, sans-serif;
           font-size: 1em; }
+  #mainFooter #copyright {
+    display: none; }
   #mainFooter #backBut {
     text-align: center; }
     #mainFooter #backBut a {
       color: #c6c6c6;
       font-size: 1.25em;
       margin-bottom: 10px; }
+
+@media screen and (min-width: 40em) {
+  #mainFooter #officialSite {
+    margin-top: 20px;
+    padding-bottom: 5px; }
+    #mainFooter #officialSite p {
+      font-size: .813em; }
+  #mainFooter #footerNav {
+    display: block;
+    margin-top: 15px;
+    padding-bottom: 0px;
+    text-align: center; }
+    #mainFooter #footerNav ul {
+      margin: 0; }
+      #mainFooter #footerNav ul li {
+        list-style-type: none;
+        display: inline-block;
+        margin-bottom: 0px;
+        margin-right: 10px; }
+        #mainFooter #footerNav ul li a {
+          font-size: .563em;
+          color: #c6c6c6;
+          font-size: .625em;
+          font-family: "open_sansregular", Helvetica, Arial, sans-serif; }
+  #mainFooter #footerSocial {
+    border-top: none;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    border-bottom: none; }
+    #mainFooter #footerSocial img {
+      max-width: 50%; }
+  #mainFooter #footerNavSmall {
+    display: none; }
+  #mainFooter #copyright {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center; }
+    #mainFooter #copyright p {
+      font-family: "gentium_book_basicregular", Times, serif;
+      font-size: .813em; }
+  #mainFooter #backBut {
+    display: none; } }
 
 /*# sourceMappingURL=app.css.map */
