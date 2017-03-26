@@ -34,12 +34,9 @@ body {
 .hidden {
   display: none; }
 
-<<<<<<< HEAD
-.redButton, .whiteButton, .grayButton {
-  background-color: #d4222a;
-  width: 100%;
-  padding: 18px;
-=======
+.redButton
+a:hover, .whiteButton
+a:hover, .grayButton
 a:hover {
   opacity: 0.5;
   filter: alpha(opacity=50);
@@ -50,89 +47,9 @@ a:hover {
   margin-bottom: 20px; }
 
 .title-bar {
-  background-color: #FFF;
-  margin-bottom: 10px; }
-
-.title-bar .menu-icon {
-  margin-right: 0; }
-
-.menu-icon::after {
-  background: #0099CC;
-  box-shadow: 0 7px 0 #0099CC, 0 14px 0 #0099CC; }
-
-.menu-icon:hover::after {
-  background: #0099CC;
-  box-shadow: 0 7px 0 #0099CC, 0 14px 0 #0099CC; }
-
-#mainNav {
-  margin: 0;
-  list-style-type: none;
-  text-align: center; }
-
-#mainNav ul li a {
-  display: block;
-  color: #8EA76D;
-  padding: 5px 0 5px 0; }
-
-#mainNav li {
-  border-bottom: 1px solid #EFEFEF; }
-
-#mainNav li:first-child {
-  border-top: 1px solid #EFEFEF; }
-
-#mainNav li:last-child {
-  margin-bottom: 10px; }
-
-#searchForm {
-  margin-top: 20px; }
-
-#searchForm .button {
-  background: #8EA76D; }
-
-#searchForm .button:hover {
-  background: #215445; }
-
-/*Logo*/
-#wollastonLogo {
-  display: block;
-  max-width: 120px;
-  margin: 0 auto; }
-
-/*Pano Area*/
-#pano {
-  background-color: #CCC;
-  margin-bottom: 30px;
-  height: 300px;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-#infoFrost {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 10px 20px 0px 20px;
-  margin-top: 15px;
-  height: 270px; }
-
-#infoFrost h2 {
-  font-size: 1.1125em; }
-
-#infoFrost h3 {
-  letter-spacing: .25px;
-  font-size: .875em; }
-
-#infoFrost p {
-  font-size: .75em;
-  color: #090909;
-  margin-top: 10px; }
-
-#bookNow {
-  font-family: 'lustriaregular', Times, 'Times New Roman', sans-serif;
-  display: block;
-  color: #FFF;
-  background-color: #8FA771;
-  text-align: center;
-  width: 120px;
-  font-size: 1em;
->>>>>>> origin/master
+  background-color: #d4222a;
+  width: 100%;
+  padding: 18px;
   margin-bottom: 20px;
   text-align: center;
   color: #fafafa;
