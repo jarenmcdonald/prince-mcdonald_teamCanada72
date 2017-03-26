@@ -2,7 +2,7 @@
 
 $primaryRed: #d4222a;
 $secondaryRed: #651014;
-$primaryGray: #202020;
+$primaryGray: #282828;
 $secondaryGray: #e1e1e1;
 $primaryWhite: #fafafa;
 
@@ -273,4 +273,82 @@ body {
 	font-size: .875em;
 	color: #333;
 	line-height: 22px;
+
+
+/*Navigation*/
+
+
+/*Footer*/
+
+
+#mainFooter {
+    background-color: $primaryGray;
+    color: #c6c6c6;
+
+    #officialSite {
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        p {
+            font-family: $gentiumBook;
+            font-size: 1em;
+            text-align: center;
+        }
+    }
+
+    #footerSocial {
+        border-top: 1px solid #c6c6c6;
+        border-bottom: 1px solid #c6c6c6;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        ul {
+            text-align: center;
+
+            li {
+                display: inline-block;
+                margin-right: 10px;
+
+                img {
+                    max-width: 80%;
+                }
+
+                a:hover {
+                    opacity: 0.5;
+                    filter: alpha(opacity=50); /* For IE8 and earlier */
+                }
+            }
+
+            li:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+
+    #footerNav {
+        margin-top: 50px;
+        padding-bottom: 35px;
+        text-align: center;
+
+        ul {
+            margin: 0;
+
+            li {
+                list-style-type: none;
+                margin-bottom: 15px;
+
+                a {
+                    color: #c6c6c6;
+                    font-family: $openSans;
+                    font-size: 1.5em;
+                }
+
+                a:hover {
+                        opacity: 0.5;
+                        filter: alpha(opacity=50); /* For IE8 and earlier */
+                }
+            }
+        }
+    }
+}
 }
