@@ -193,7 +193,7 @@ body {
         display: inline-block;
         margin-right: 10px; }
         #mainFooter #footerSocial ul li img {
-          max-width: 80%; }
+          max-width: 60%; }
         #mainFooter #footerSocial ul li a:hover {
           opacity: 0.5;
           filter: alpha(opacity=50);
@@ -212,7 +212,7 @@ body {
         #mainFooter #footerNav ul li a {
           color: #c6c6c6;
           font-family: "open_sansregular", Helvetica, Arial, sans-serif;
-          font-size: 1.5em; }
+          font-size: 1em; }
         #mainFooter #footerNav ul li a:hover {
           opacity: 0.5;
           filter: alpha(opacity=50);
