@@ -73,20 +73,6 @@ body {
   display: none;
 }
 
-<<<<<<< HEAD
-.redButton
-
-a:hover {
-    opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
-}
-
-
-
-
-
-=======
->>>>>>> origin/master
 
 
 /*Main Page Elements*/
@@ -96,11 +82,8 @@ a:hover {
 	margin-bottom: 20px;
 }
 
-<<<<<<< HEAD
-.title-bar
-=======
+
 .redButton
->>>>>>> origin/master
 {
   background-color: $primaryRed;
   width: 100%;
@@ -113,6 +96,8 @@ a:hover {
   text-transform: uppercase;
   font-size: .9em;
 }
+
+
 
 .whiteButton
 {
