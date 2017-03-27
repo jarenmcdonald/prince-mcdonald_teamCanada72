@@ -1,5 +1,6 @@
 //SASS Document
 
+/*Variables*/
 $primaryRed: #d4222a;
 $secondaryRed: #651014;
 $primaryGray: #282828;
@@ -7,10 +8,13 @@ $secondaryGray: #e1e1e1;
 $primaryWhite: #fafafa;
 
 $gentiumBook: 'gentium_book_basicregular', Times, serif;
-$openSans: 'open_sansregular', Helvetica, Arial, sans-serif;
-$openSansExtraBold: 'open_sansextrabold', Helvetica, Arial, sans-serif;
-$openSansLight: 'open_sanslight', Helvetica, Arial, sans-serif;
-$openSansSemiBold: 'open_sanssemibold', Helvetica, Arial, sans-serif;
+$openSans: 'Open Sans', sans-serif;
+
+$light: 300;
+$regular: 400;
+$bold: 700;
+$extra-bold: 800;
+
 
 
 /*Fonts*/
@@ -61,7 +65,7 @@ $openSansSemiBold: 'open_sanssemibold', Helvetica, Arial, sans-serif;
 body {
     color: #FFF;
     font-size: 16px;
-    background-color: #00f0df;
+    background-color: #fff;
 }
 
 /*Overall Classes*/
@@ -83,12 +87,13 @@ body {
   background-color: $primaryRed;
   width: 100%;
   padding: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   text-align: center;
   color: $primaryWhite;
   font-family: $openSans;
+  font-weight: $regular;
   text-transform: uppercase;
-  font-size: .8em;
+  font-size: .9em;
 }
 
 .whiteButton
@@ -110,6 +115,37 @@ body {
 /*Navigation*/
 
 
+/*Hero Banner*/
+.hero {
+  background-image: url("../images/hero_bg1.jpg");
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  height: 220px;
+  background-size: 100%;
+
+h1 {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: $primaryRed;
+  text-transform: uppercase;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  margin-top: 70px;
+  font-family: $openSans;
+  font-weight: $extra-bold;
+}
+
+h2 {
+  text-align: center;
+  color: $primaryRed;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-family: $openSans;
+  font-weight: $bold;
+}
+}
+
+
 /*Summit Series Home*/
 #summitSeriesHome {
   background-color: $primaryWhite;
@@ -118,6 +154,8 @@ body {
   font-family: $gentiumBook;
 
 h2 {
+  font-family: $openSans;
+  font-weight: $bold;
   color: $primaryRed;
   font-size: 1.5em;
   text-align: center;
@@ -125,6 +163,15 @@ h2 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+img {
+  padding-bottom: 25px;
+}
+
+p {
+  padding-bottom: 10px;
+}
+
 }
 
 
@@ -136,13 +183,34 @@ h2 {
   font-family: $gentiumBook;
 
 h2 {
+  font-family: $openSans;
+  font-weight: $bold;
   color: $primaryWhite;
   font-size: 1.5em;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 20px;
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $openSans;
+  font-weight: $bold;
   padding-bottom: 20px;
 }
+
+img {
+  padding-bottom: 25px;
+}
+
+p {
+  padding-bottom: 10px;
+}
+
+
 }
 
 /*Tour Home*/
@@ -153,12 +221,18 @@ h2 {
   font-family: $gentiumBook;
 
 h2 {
+  font-family: $openSans;
+  font-weight: $bold;
   color: $primaryWhite;
   font-size: 1.5em;
   text-align: center;
   text-transform: uppercase;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+p {
+  padding-bottom: 10px;
 }
 }
 
@@ -195,7 +269,7 @@ p {
     color: #c6c6c6;
 
     #officialSite {
-        border-bottom: 1px solid #c6c6c6;
+        border-bottom: 1px solid #454545;
         margin-top: 50px;
         padding-bottom: 50px;
 
@@ -211,19 +285,20 @@ p {
     }
 
     #footerSocial {
-        border-bottom: 1px solid #c6c6c6;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        border-bottom: 1px solid #454545;
+        padding-top: 30px;
+        padding-bottom: 20px;
 
         ul {
             text-align: center;
 
             li {
                 display: inline-block;
-                margin-right: 10px;
+                margin-right: 0px;
+
 
                 img {
-                    max-width: 60%;
+                    max-width: 40%;
                 }
             }
 
@@ -262,8 +337,9 @@ p {
     text-align: center;
 
         a {
-            color: #c6c6c6;
-            font-size: 1.25em;
+            color: #717171;
+            font-size: .7em;
+            text-transform: uppercase;
             margin-bottom: 10px;
         }
     }
