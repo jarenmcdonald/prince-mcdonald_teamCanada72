@@ -29,11 +29,19 @@
 body {
   color: #FFF;
   font-size: 16px;
-  background-color: #fff; }
+  background-color: #fff;
+  padding: 0;
+  margin: 0; }
 
 /*Overall Classes*/
 .hidden {
   display: none; }
+
+.fullWidth {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial; }
 
 /*Main Page Elements*/
 #mainHeader {
@@ -63,10 +71,11 @@ body {
 /*Navigation*/
 /*Hero Banner*/
 .hero {
+  background-color: black;
   background-image: url("../images/hero_bg1.jpg");
   background-repeat: no-repeat;
   background-origin: padding-box;
-  height: 220px;
+  height: 250px;
   background-size: 100%; }
   .hero h1 {
     background-color: rgba(255, 255, 255, 0.6);
@@ -85,6 +94,17 @@ body {
     font-size: 1em;
     font-family: "Open Sans", sans-serif;
     font-weight: 700; }
+
+#heroSocial {
+  padding-top: 20px; }
+  #heroSocial ul {
+    text-align: center; }
+    #heroSocial ul li {
+      display: inline; }
+    #heroSocial ul img {
+      max-width: 25%;
+      padding-left: 15px;
+      padding-right: 15px; }
 
 /*Summit Series Home*/
 #summitSeriesHome {
@@ -174,8 +194,8 @@ body {
   color: #c6c6c6; }
   #mainFooter #officialSite {
     border-bottom: 1px solid #454545;
-    margin-top: 50px;
-    padding-bottom: 50px; }
+    margin-top: 40px;
+    padding-bottom: 30px; }
     #mainFooter #officialSite p {
       font-family: "gentium_book_basicregular", Times, serif;
       font-size: 1em;
@@ -189,12 +209,11 @@ body {
     #mainFooter #footerSocial ul {
       text-align: center; }
       #mainFooter #footerSocial ul li {
-        display: inline-block;
-        margin-right: 0px; }
-        #mainFooter #footerSocial ul li img {
-          max-width: 40%; }
-      #mainFooter #footerSocial ul li:last-child {
-        margin-right: 0px; }
+        display: inline; }
+      #mainFooter #footerSocial ul img {
+        max-width: 25%;
+        padding-left: 15px;
+        padding-right: 15px; }
   #mainFooter #footerNavSmall {
     margin-top: 50px;
     padding-bottom: 35px;
