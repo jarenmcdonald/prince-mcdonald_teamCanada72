@@ -35,11 +35,26 @@ body {
 .hidden {
   display: none; }
 
+<<<<<<< HEAD
+.redButton
+a:hover, .whiteButton
+a:hover, .grayButton
+a:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */ }
+
+=======
+>>>>>>> origin/master
 /*Main Page Elements*/
 #mainHeader {
   margin-bottom: 20px; }
 
+<<<<<<< HEAD
+.title-bar {
+=======
 .redButton, .whiteButton, .grayButton {
+>>>>>>> origin/master
   background-color: #d4222a;
   width: 100%;
   padding: 18px;
