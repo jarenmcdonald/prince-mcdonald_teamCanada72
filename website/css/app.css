@@ -20,6 +20,11 @@ p {
   margin-right: auto;
   max-width: initial; }
 
+a:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */ }
+
 /*Main Page Elements*/
 #mainHeader {
   margin-bottom: 20px; }
