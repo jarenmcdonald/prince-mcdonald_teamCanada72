@@ -7,7 +7,7 @@ $primaryGray: #282828;
 $secondaryGray: #e1e1e1;
 $primaryWhite: #fafafa;
 
-$gentiumBook: 'gentium_book_basicregular', Times, serif;
+$gentiumBook: 'Gentium Book Basic', serif;
 $openSans: 'Open Sans', sans-serif;
 
 $light: 300;
@@ -17,49 +17,6 @@ $extra-bold: 800;
 
 
 
-/*Fonts*/
-
-
-@font-face {
-    font-family: 'gentium_book_basicregular';
-    src: url("..assets/fonts/webfontkit-genB/'genbkbasr-webfont.woff2'") format('woff2'),
-         url("..assets/fonts/webfontkit-genB/'genbkbasr-webfont.woff'") format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'open_sansextrabold';
-    src: url("..assets/fonts/webfontkit-openS/'opensans-extrabold-webfont.woff2 ") format('woff2'),
-         url("..assets/fonts/webfontkit-openS/'opensans-extrabold-webfont.woff'") format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'open_sanslight';
-    src: url("..assets/fonts/webfontkit-openS/'opensans-light-webfont.woff2'") format('woff2'),
-         url("..assets/fonts/webfontkit-openS/'opensans-light-webfont.woff'") format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'open_sansregular';
-    src: url("..assets/fonts/webfontkit-openS/'opensans-regular-webfont.woff2'") format('woff2'),
-         url("..assets/fonts/webfontkit-openS/'opensans-regular-webfont.woff'") format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'open_sanssemibold';
-    src: url("..assets/fonts/webfontkit-openS/'opensans-semibold-webfont.woff2'") format('woff2'),
-         url("..assets/fonts/webfontkit-openS/'opensans-semibold-webfont.woff'") format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /*Body*/
 
 body {
@@ -68,6 +25,10 @@ body {
     background-color: #fff;
     padding: 0;
     margin: 0;
+}
+
+p {
+  font-size: 1em;
 }
 
 /*Overall Classes*/
@@ -105,6 +66,10 @@ body {
   font-size: .9em;
 }
 
+.redButton:hover
+{
+  background-color: $primaryGray;
+}
 
 
 .whiteButton
@@ -125,26 +90,97 @@ body {
 
 /*Navigation*/
 
+#mainNav
+{
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  height: 100px;
+}
+
+#logo
+{
+  width: 90px;
+  margin-left: 20px;
+  margin-top: 7px;
+  float: left;
+}
+
+#hamburger
+{
+  float: right;
+  margin-top: 40px;
+  margin-right: 20px;
+  max-width: 30px;
+}
+
+#content
+{
+  display: none;
+}
+
+#content.open
+{
+  display: block;
+}
+
+#mainNav ul
+{
+  clear: both;
+  background-color: #fff;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 3px 18px -5px rgba(0,0,0,0.56);
+  -moz-box-shadow: 0px 3px 18px -5px rgba(0,0,0,0.56);
+  box-shadow: 0px 3px 18px -5px rgba(0,0,0,0.56);
+}
+
+#mainNav ul li
+{
+ padding-top: 10px;
+ padding-bottom: 10px;
+ border-bottom: solid 2px #f9f9f9;
+}
+
+#mainNav ul li a
+{
+  color: $secondaryRed;
+}
+
+
+
+
+
+
 
 /*Hero Banner*/
 .hero {
+  margin-top: 100px;
   background-color: black;
   background-image: url("../images/hero_bg1.jpg");
   background-repeat: no-repeat;
   background-origin: padding-box;
+  background-size: 110%;
   height: 250px;
-  background-size: 100%;
 
 h1 {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
   color: $primaryRed;
   text-transform: uppercase;
   padding: 15px;
   width: 100%;
   text-align: center;
-  margin-top: 70px;
+  margin-top: 50px;
+  margin-bottom: 20px;
   font-family: $openSans;
   font-weight: $extra-bold;
+    font-size: 1.8em;
 }
 
 h2 {
@@ -159,7 +195,6 @@ h2 {
 
 #heroSocial
 {
-  padding-top: 20px;
 
   ul {
       text-align: center;
@@ -169,9 +204,13 @@ h2 {
         }
 
           img {
-              max-width: 25%;
-              padding-left: 15px;
-              padding-right: 15px;
+              margin-top: 20px;
+              max-width: 15%;
+          }
+
+          #twitterimg {
+            margin-left: 55px;
+              margin-right: 55px;
           }
 
 
@@ -231,6 +270,7 @@ h3 {
   font-size: 1em;
   text-align: center;
   text-transform: uppercase;
+  color: $primaryWhite;
   font-family: $openSans;
   font-weight: $bold;
   padding-bottom: 20px;
@@ -307,6 +347,7 @@ p {
         margin-top: 40px;
         padding-bottom: 30px;
 
+
         p {
             font-family: $gentiumBook;
             font-size: 1em;
@@ -378,13 +419,16 @@ p {
 
 @media screen and (min-width: 40em) /*640px*/ {
 
+
+
+/*Footer*/
     #mainFooter {
         #officialSite {
             margin-top: 20px;
             padding-bottom: 5px;
 
             p {
-                font-size: .813em;
+                font-size: 1em;
             }
         }
 
@@ -406,7 +450,7 @@ p {
                     a {
                         font-size: .563em;
                         color: #c6c6c6;
-                        font-size: .625em;
+                        font-size: 1em;
                         font-family: $openSans;
                     }
                 }
@@ -436,7 +480,7 @@ p {
 
             p {
                 font-family: $gentiumBook;
-                font-size: .813em;
+                font-size: 1em;
             }
         }
 

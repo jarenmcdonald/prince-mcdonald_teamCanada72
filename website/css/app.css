@@ -1,30 +1,4 @@
 /*Variables*/
-/*Fonts*/
-@font-face {
-  font-family: 'gentium_book_basicregular';
-  src: url("..assets/fonts/webfontkit-genB/'genbkbasr-webfont.woff2'") format("woff2"), url("..assets/fonts/webfontkit-genB/'genbkbasr-webfont.woff'") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'open_sansextrabold';
-  src: url("..assets/fonts/webfontkit-openS/'opensans-extrabold-webfont.woff2 ") format("woff2"), url("..assets/fonts/webfontkit-openS/'opensans-extrabold-webfont.woff'") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'open_sanslight';
-  src: url("..assets/fonts/webfontkit-openS/'opensans-light-webfont.woff2'") format("woff2"), url("..assets/fonts/webfontkit-openS/'opensans-light-webfont.woff'") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'open_sansregular';
-  src: url("..assets/fonts/webfontkit-openS/'opensans-regular-webfont.woff2'") format("woff2"), url("..assets/fonts/webfontkit-openS/'opensans-regular-webfont.woff'") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'open_sanssemibold';
-  src: url("..assets/fonts/webfontkit-openS/'opensans-semibold-webfont.woff2'") format("woff2"), url("..assets/fonts/webfontkit-openS/'opensans-semibold-webfont.woff'") format("woff");
-  font-weight: normal;
-  font-style: normal; }
 /*Body*/
 body {
   color: #FFF;
@@ -32,6 +6,9 @@ body {
   background-color: #fff;
   padding: 0;
   margin: 0; }
+
+p {
+  font-size: 1em; }
 
 /*Overall Classes*/
 .hidden {
@@ -59,6 +36,9 @@ body {
   text-transform: uppercase;
   font-size: .9em; }
 
+.redButton:hover, .whiteButton:hover, .grayButton:hover {
+  background-color: #282828; }
+
 .whiteButton {
   background-color: #fafafa;
   color: #d4222a; }
@@ -69,24 +49,74 @@ body {
   margin-top: 20px; }
 
 /*Navigation*/
+#mainNav {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  height: 100px; }
+
+#logo {
+  width: 90px;
+  margin-left: 20px;
+  margin-top: 7px;
+  float: left; }
+
+#hamburger {
+  float: right;
+  margin-top: 40px;
+  margin-right: 20px;
+  max-width: 30px; }
+
+#content {
+  display: none; }
+
+#content.open {
+  display: block; }
+
+#mainNav ul {
+  clear: both;
+  background-color: #fff;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 3px 18px -5px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 0px 3px 18px -5px rgba(0, 0, 0, 0.56);
+  box-shadow: 0px 3px 18px -5px rgba(0, 0, 0, 0.56); }
+
+#mainNav ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid 2px #f9f9f9; }
+
+#mainNav ul li a {
+  color: #651014; }
+
 /*Hero Banner*/
 .hero {
+  margin-top: 100px;
   background-color: black;
   background-image: url("../images/hero_bg1.jpg");
   background-repeat: no-repeat;
   background-origin: padding-box;
-  height: 250px;
-  background-size: 100%; }
+  background-size: 110%;
+  height: 250px; }
   .hero h1 {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.7);
     color: #d4222a;
     text-transform: uppercase;
     padding: 15px;
     width: 100%;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 50px;
+    margin-bottom: 20px;
     font-family: "Open Sans", sans-serif;
-    font-weight: 800; }
+    font-weight: 800;
+    font-size: 1.8em; }
   .hero h2 {
     text-align: center;
     color: #d4222a;
@@ -95,23 +125,23 @@ body {
     font-family: "Open Sans", sans-serif;
     font-weight: 700; }
 
-#heroSocial {
-  padding-top: 20px; }
-  #heroSocial ul {
-    text-align: center; }
-    #heroSocial ul li {
-      display: inline; }
-    #heroSocial ul img {
-      max-width: 25%;
-      padding-left: 15px;
-      padding-right: 15px; }
+#heroSocial ul {
+  text-align: center; }
+  #heroSocial ul li {
+    display: inline; }
+  #heroSocial ul img {
+    margin-top: 20px;
+    max-width: 15%; }
+  #heroSocial ul #twitterimg {
+    margin-left: 55px;
+    margin-right: 55px; }
 
 /*Summit Series Home*/
 #summitSeriesHome {
   background-color: #fafafa;
   color: #282828;
   font-size: 1.2em;
-  font-family: "gentium_book_basicregular", Times, serif; }
+  font-family: "Gentium Book Basic", serif; }
   #summitSeriesHome h2 {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
@@ -131,7 +161,7 @@ body {
   background-color: #d4222a;
   color: #fafafa;
   font-size: 1.2em;
-  font-family: "gentium_book_basicregular", Times, serif; }
+  font-family: "Gentium Book Basic", serif; }
   #learnHome h2 {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
@@ -145,6 +175,7 @@ body {
     font-size: 1em;
     text-align: center;
     text-transform: uppercase;
+    color: #fafafa;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     padding-bottom: 20px; }
@@ -158,7 +189,7 @@ body {
   background-color: black;
   color: #fafafa;
   font-size: 1.2em;
-  font-family: "gentium_book_basicregular", Times, serif; }
+  font-family: "Gentium Book Basic", serif; }
   #tourHome h2 {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
@@ -176,7 +207,7 @@ body {
   background-color: #fafafa;
   color: #282828;
   font-size: 1.2em;
-  font-family: "gentium_book_basicregular", Times, serif; }
+  font-family: "Gentium Book Basic", serif; }
   #botiqueHome h2 {
     color: #d4222a;
     font-size: 1.5em;
@@ -197,7 +228,7 @@ body {
     margin-top: 40px;
     padding-bottom: 30px; }
     #mainFooter #officialSite p {
-      font-family: "gentium_book_basicregular", Times, serif;
+      font-family: "Gentium Book Basic", serif;
       font-size: 1em;
       text-align: center; }
   #mainFooter #footerNav {
@@ -238,11 +269,12 @@ body {
       margin-bottom: 10px; }
 
 @media screen and (min-width: 40em) {
+  /*Footer*/
   #mainFooter #officialSite {
     margin-top: 20px;
     padding-bottom: 5px; }
     #mainFooter #officialSite p {
-      font-size: .813em; }
+      font-size: 1em; }
   #mainFooter #footerNav {
     display: block;
     margin-top: 15px;
@@ -258,7 +290,7 @@ body {
         #mainFooter #footerNav ul li a {
           font-size: .563em;
           color: #c6c6c6;
-          font-size: .625em;
+          font-size: 1em;
           font-family: "Open Sans", sans-serif; }
   #mainFooter #footerSocial {
     border-top: none;
@@ -275,8 +307,8 @@ body {
     display: block;
     text-align: center; }
     #mainFooter #copyright p {
-      font-family: "gentium_book_basicregular", Times, serif;
-      font-size: .813em; }
+      font-family: "Gentium Book Basic", serif;
+      font-size: 1em; }
   #mainFooter #backBut {
     display: none; } }
 
