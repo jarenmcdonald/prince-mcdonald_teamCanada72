@@ -419,6 +419,43 @@ a:hover {
     margin-top: 20px;
     margin-bottom: 60px; }
 
+  /*Nav*/
+  #logo {
+    width: 90px;
+    margin-left: 80px;
+    margin-top: 7px;
+    float: left; }
+
+  #hamburger {
+    display: none; }
+
+  #content {
+    display: inline;
+    float: right; }
+
+  #mainNav ul {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding-top: 35px;
+    padding-bottom: 0px;
+    text-align: left;
+    background: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+
+  #mainNav ul li {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px;
+    display: inline;
+    font-size: 1.2em;
+    margin-right: 40px; }
+
+  #mainNav ul li a {
+    color: #651014; }
+
   /*Hero Banner*/
   .hero {
     height: 650px;
