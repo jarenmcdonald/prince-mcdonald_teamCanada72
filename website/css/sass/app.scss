@@ -19,7 +19,7 @@ $extra-bold: 800;
 
 /*Body*/
 body {
-    color: #FFF;
+
     font-size: 16px;
     background-color: #fff;
     padding: 0;
@@ -43,11 +43,13 @@ p {
    max-width: initial;
 }
 
-a:hover {
-    opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
-}
 
+a {
+  -webkit-transition: all ease.2s;
+  -moz-transition: all ease .2s;
+  -o-transition: all ease .2s;
+  transition: all ease.2s;
+}
 
 
 /*Main Page Elements*/
@@ -160,8 +162,16 @@ a:hover {
 #mainNav ul li a
 {
   color: $secondaryRed;
+  -webkit-transition: all ease.2s;
+  -moz-transition: all ease .2s;
+  -o-transition: all ease .2s;
+  transition: all ease.2s;
 }
 
+#mainNav ul li a:hover
+{
+  color: $primaryRed;
+}
 
 
 
@@ -177,6 +187,10 @@ a:hover {
   background-origin: padding-box;
   background-size: 110%;
   height: 250px;
+  -webkit-transition: background 1s linear;
+  -moz-transition: background 1s linear;
+  -o-transition:background 1s linear;
+  transition: background 1s linear;
 
 h1 {
   background-color: rgba(255, 255, 255, 0.7);
@@ -695,11 +709,6 @@ p {
        margin-right: 40px;
     }
 
-    #mainNav ul li a
-    {
-      color: $secondaryRed;
-    }
-
 
 
 
@@ -748,7 +757,7 @@ p {
 
     /*Summit Series Home*/
     #summitSeriesHome {
-      width: 80%;
+
 
     h2 {
       text-align: left;

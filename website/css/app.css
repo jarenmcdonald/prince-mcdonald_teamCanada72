@@ -1,7 +1,6 @@
 /*Variables*/
 /*Body*/
 body {
-  color: #FFF;
   font-size: 16px;
   background-color: #fff;
   padding: 0;
@@ -20,10 +19,11 @@ p {
   margin-right: auto;
   max-width: initial; }
 
-a:hover {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-  /* For IE8 and earlier */ }
+a {
+  -webkit-transition: all ease 0.2s;
+  -moz-transition: all ease .2s;
+  -o-transition: all ease .2s;
+  transition: all ease 0.2s; }
 
 /*Main Page Elements*/
 #mainHeader {
@@ -102,7 +102,14 @@ a:hover {
   border-bottom: solid 2px #f9f9f9; }
 
 #mainNav ul li a {
-  color: #651014; }
+  color: #651014;
+  -webkit-transition: all ease 0.2s;
+  -moz-transition: all ease .2s;
+  -o-transition: all ease .2s;
+  transition: all ease 0.2s; }
+
+#mainNav ul li a:hover {
+  color: #d4222a; }
 
 /*Hero Banner*/
 .hero {
@@ -112,7 +119,11 @@ a:hover {
   background-repeat: no-repeat;
   background-origin: padding-box;
   background-size: 110%;
-  height: 250px; }
+  height: 250px;
+  -webkit-transition: background 1s linear;
+  -moz-transition: background 1s linear;
+  -o-transition: background 1s linear;
+  transition: background 1s linear; }
   .hero h1 {
     background-color: rgba(255, 255, 255, 0.7);
     color: #d4222a;
@@ -453,9 +464,6 @@ a:hover {
     font-size: 1.2em;
     margin-right: 40px; }
 
-  #mainNav ul li a {
-    color: #651014; }
-
   /*Hero Banner*/
   .hero {
     height: 650px;
@@ -480,17 +488,15 @@ a:hover {
       margin-right: 15px; }
 
   /*Summit Series Home*/
-  #summitSeriesHome {
-    width: 80%; }
-    #summitSeriesHome h2 {
-      text-align: left;
-      font-size: 2em;
-      padding-top: 60px;
-      padding-bottom: 30px; }
-    #summitSeriesHome img {
-      margin: 0 auto; }
-    #summitSeriesHome p {
-      margin: 0; }
+  #summitSeriesHome h2 {
+    text-align: left;
+    font-size: 2em;
+    padding-top: 60px;
+    padding-bottom: 30px; }
+  #summitSeriesHome img {
+    margin: 0 auto; }
+  #summitSeriesHome p {
+    margin: 0; }
 
   /*Learn Home*/
   #learnHome img {
