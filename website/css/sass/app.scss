@@ -24,6 +24,7 @@ body {
     background-color: #fff;
     padding: 0;
     margin: 0;
+    background-image: url("../images/ice_age.png");
 }
 
 p {
@@ -36,12 +37,7 @@ p {
 }
 
 
-.fullWidth {
-   width: 100%;
-   margin-left: auto;
-   margin-right: auto;
-   max-width: initial;
-}
+
 
 
 a {
@@ -49,8 +45,14 @@ a {
   -moz-transition: all ease .2s;
   -o-transition: all ease .2s;
   transition: all ease.2s;
+  color: $primaryRed;
 }
 
+a:hover {
+  color: lighten($primaryRed, 25%);
+}
+
+/*HOME PAGE*/
 
 /*Main Page Elements*/
 
@@ -94,6 +96,28 @@ a {
   color: $primaryWhite;
   margin-top: 20px;
 }
+
+
+.submitButton
+{
+  background-color: $primaryRed;
+  width: 100%;
+  padding: 18px;
+  margin-top: 20px;
+  margin-bottom: 65px;
+  text-align: center;
+  color: $primaryWhite;
+  font-family: $openSans;
+  font-weight: $regular;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.submitButton:hover
+{
+  background-color: $primaryGray;
+}
+
 
 
 /*Navigation*/
@@ -705,7 +729,7 @@ p {
      padding-bottom: 0px;
      border-bottom: 0px;
        display: inline;
-       font-size: 1.2em;
+       font-size: 1.1em;
        margin-right: 40px;
     }
 
@@ -756,8 +780,14 @@ p {
 
 
     /*Summit Series Home*/
-    #summitSeriesHome {
+    #summitSeriesBG
+    {
+      width: 100%;
+      background-color: #fafafa;
+    }
 
+    #summitSeriesHome {
+      width: 80%;
 
     h2 {
       text-align: left;
@@ -777,19 +807,34 @@ p {
 
 
     /*Learn Home*/
-    #learnHome {
 
+    #learnBG
+    {
+      width: 100%;
+      background-color: $primaryRed;
+    }
+
+
+    #learnHome {
+      width: 80%;
+
+      h2 {
+        font-size: 2em;
+        padding-top: 60px;
+        padding-bottom: 30px;
+      }
+
+      h3
+      {
+        text-align: right;
+      }
 
     img {
-      display: block;
       margin: 0 auto;
     }
 
     p {
-      width: 90%;
-      display: block;
-      margin: 0 auto;
-      margin-bottom: 20px;
+    margin: 0;
     }
 
 
@@ -822,6 +867,13 @@ p {
     }
 
   /*Footer*/
+
+  #footerBG
+  {
+    width: 100%;
+    background-color: $primaryGray;
+  }
+
       #mainFooter {
           #officialSite {
               margin-top: 20px;
@@ -888,5 +940,127 @@ p {
               display: none;
           }
       }
+
+}
+
+
+/* Extra large - 1440px */
+@media screen and (min-width: 90em) {
+
+  /*Overall Classes*/
+    .redButton
+    {
+      display: block;
+      margin: 0;
+      width: 170px;
+      margin-top: 20px;
+      margin-bottom: 60px;
+    }
+
+
+
+  /*Nav*/
+
+    #logo
+    {
+      width: 90px;
+      margin-left: 80px;
+      margin-top: 7px;
+      float: left;
+    }
+
+    #hamburger
+    {
+    display: none;
+    }
+
+    #content
+    {
+      display: inline;
+      float: right;
+    }
+}
+
+
+
+//
+//
+//
+//
+
+
+
+/*CONTACT PAGE*/
+.contact {
+  margin-top: 100px;
+  background-color: black;
+  background-image: url("../images/hero_bg3.jpg");
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-size: 110%;
+  height: 150px;
+  -webkit-transition: background 1s linear;
+  -moz-transition: background 1s linear;
+  -o-transition:background 1s linear;
+  transition: background 1s linear;
+}
+
+h1 {
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-family: $openSans;
+  font-weight: $bold;
+    font-size: 2.8em;
+}
+
+#contactInfo
+{
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+p
+{
+  color: $primaryGray;
+  font-size: 1.2em;
+  font-family: $gentiumBook;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  color: $secondaryRed;
+  font-size: 1.2em;
+  font-family: $gentiumBook;
+}
+}
+
+#contactForm
+{
+  label
+{
+  color: $primaryGray;
+  font-size: 1.1em;
+  font-family: $gentiumBook;
+}
+textarea
+{
+  font-size: 1em;
+}
+}
+
+/* Large and up - 1024px */
+@media screen and (min-width: 64em) {
+
+
+.submitButton
+{
+  width: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
 }
