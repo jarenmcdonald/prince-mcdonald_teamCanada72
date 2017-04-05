@@ -725,6 +725,10 @@ p {
                         font-size: 1em;
                         font-family: $openSans;
                     }
+
+                    a:hover {
+                        opacity: .6;
+                    }
                 }
             }
         }
@@ -737,6 +741,10 @@ p {
 
             img {
                 max-width: 50%;
+            }
+
+            a:hover {
+                opacity: .6;
             }
         }
 
@@ -964,6 +972,10 @@ p {
     background-color: $primaryGray;
   }
 
+  #footerNav {
+      display: none;
+  }
+
       #mainFooter {
           #officialSite {
               margin-top: 20px;
@@ -971,31 +983,6 @@ p {
 
               p {
                   font-size: 1em;
-              }
-          }
-
-          #footerNav {
-              display: block;
-              margin-top: 15px;
-              padding-bottom: 0px;
-              text-align: center;
-
-              ul {
-              margin: 0;
-
-                  li {
-                      list-style-type: none;
-                      display: inline-block;
-                      margin-bottom: 0px;
-                      margin-right: 10px;
-
-                      a {
-                          font-size: .563em;
-                          color: #c6c6c6;
-                          font-size: 1em;
-                          font-family: $openSans;
-                      }
-                  }
               }
           }
 
@@ -1011,7 +998,22 @@ p {
           }
 
           #footerNavSmall {
-              display: none;
+              display: block;
+              margin-top: 30px;
+              padding-bottom: 0px;
+
+             ul {
+                 li {
+                     display: inline;
+                     margin-right: 15px;
+                     a:hover {
+                         opacity: .6;
+                     }
+                }
+                li:last-child {
+                    margin-right: 0px;
+                }
+             }
           }
 
           #copyright {
@@ -1068,6 +1070,12 @@ p {
     {
       display: inline;
       float: right;
+    }
+
+
+    //Footer
+    #footeNav {
+        display: none;
     }
 }
 
