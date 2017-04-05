@@ -831,11 +831,6 @@ a:hover {
     margin-bottom: 20px; }
 
 /* Medium and up  */
-@media screen and (min-width: 40em) {
-  #eventsTitle h2 {
-    font-size: 2.1em; }
-  #eventsTitle h3 {
-    font-size: 1.3em; } }
 /* Large and up  */
 @media screen and (min-width: 40em) {
   #eventsTitle h2 {
@@ -987,8 +982,26 @@ h1 {
   font-weight: 700;
   font-size: 2.8em; }
 
+#contactTitle h2 {
+  color: #d4222a;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em; }
+#contactTitle h3 {
+  color: #898898;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "Gentium Book Basic", serif;
+  font-size: 1.3em;
+  font-style: italic; }
+
 #contactInfo {
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 30px; }
   #contactInfo p {
     color: #282828;
@@ -1008,10 +1021,21 @@ h1 {
 #contactForm textarea {
   font-size: 1em; }
 
+/* Medium and up  */
+@media screen and (min-width: 40em) {
+  #contactTitle h2 {
+    font-size: 2.3em; }
+  #contactTitle h3 {
+    font-size: 1.4em; } }
 /* Large and up - 1024px */
 @media screen and (min-width: 64em) {
+  #contactTitle h2 {
+    font-size: 2.3em; }
+  #contactTitle h3 {
+    font-size: 1.4em; }
+
   #contactInfo {
-    margin-top: 50px; }
+    margin-top: 20px; }
 
   .submitButton {
     width: 100px;

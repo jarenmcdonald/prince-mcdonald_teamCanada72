@@ -1300,18 +1300,8 @@ img
 /* Medium and up  */
 @media screen and (min-width: 40em) {
 
-  #eventsTitle
-  {
-    h2 {
-        font-size: 2.1em;
-    }
 
-    h3
-    {
-      font-size: 1.3em;
-    }
 
-  }
 
 }
 
@@ -1546,9 +1536,37 @@ h1 {
     font-size: 2.8em;
 }
 
+#contactTitle
+{
+  h2 {
+    color: $primaryRed;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-family: $openSans;
+    font-weight: $bold;
+      font-size: 1.5em;
+  }
+
+  h3
+  {
+    color: #898898;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: $gentiumBook;
+    font-size: 1.3em;
+    font-style: italic;
+  }
+
+}
+
+
+
 #contactInfo
 {
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 30px;
 
 p
@@ -1581,12 +1599,46 @@ textarea
 }
 }
 
+/* Medium and up  */
+@media screen and (min-width: 40em) {
+
+  #contactTitle
+  {
+    h2 {
+        font-size: 2.3em;
+    }
+
+    h3
+    {
+      font-size: 1.4em;
+    }
+
+  }
+
+}
+
+
 /* Large and up - 1024px */
 @media screen and (min-width: 64em) {
 
+  #contactTitle
+  {
+    h2 {
+        font-size: 2.3em;
+    }
+
+    h3
+    {
+      font-size: 1.4em;
+    }
+
+  }
+
+
+
   #contactInfo
   {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
 .submitButton
