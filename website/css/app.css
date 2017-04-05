@@ -14,6 +14,18 @@ p {
 .hidden {
   display: none; }
 
+.fullWidth {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial; }
+
+.almostFullWidth {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial; }
+
 a {
   -webkit-transition: all ease 0.2s;
   -moz-transition: all ease .2s;
@@ -126,6 +138,57 @@ a:hover {
 
 #mainNav ul li a:hover {
   color: #d4222a; }
+
+/*News*/
+#news {
+  padding-bottom: 40px;
+  border-bottom: solid 1px #ddd; }
+  #news h2 {
+    color: #282828;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    -webkit-transition: all ease 0.2s;
+    -moz-transition: all ease .2s;
+    -o-transition: all ease .2s;
+    transition: all ease 0.2s; }
+  #news h2:hover {
+    color: #6f6f6f; }
+  #news h3 {
+    color: #d4222a;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    -webkit-transition: all ease 0.2s;
+    -moz-transition: all ease .2s;
+    -o-transition: all ease .2s;
+    transition: all ease 0.2s; }
+  #news h3:hover {
+    color: #ee979a; }
+  #news h4 {
+    color: #888;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 0px;
+    font-size: .8em; }
+  #news h4:hover {
+    text-decoration: underline; }
+  #news img {
+    padding-right: 20px;
+    opacity: 1;
+    -webkit-transition: all ease 0.2s;
+    -moz-transition: all ease .2s;
+    -o-transition: all ease .2s;
+    transition: all ease 0.2s; }
+  #news img:hover {
+    opacity: .8; }
 
 /*Hero Banner*/
 .hero {
