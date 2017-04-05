@@ -86,7 +86,7 @@
 <a href="news.html"><h2>Latest News</h2></a>
     <div class="small-12 columns">
 
-<div class="your-class">
+<div class="newsCarousel">
   <div>
     <a href="#"><img src="images/news1.jpg" alt="Curse of Clara">
       <h3>"Curse of Clara" Named Best Animated Programme</h3>
@@ -109,21 +109,21 @@
   </div>
 
   <div>
-    <a href="#"><img src="images/news4.jpg" alt="Summit Series Thanks">
+    <a href="#"><img src="images/news4.jpg" alt="Canadian Government Honour">
       <h3>Government of Canada Honours Team Canada 1972</h3>
       <h4>13 FEB 2017</h4>
     </a>
   </div>
 
   <div>
-    <a href="#"><img src="images/news5.jpg" alt="Summit Series Thanks">
+    <a href="#"><img src="images/news5.jpg" alt="Meeting Pre-Tour Media">
       <h3>Meeting the Pre-Tour Media in Toronto</h3>
       <h4>23 JAN 2017</h4>
     </a>
   </div>
 
   <div>
-    <a href="#"><img src="images/news6.jpg" alt="Summit Series Thanks">
+    <a href="#"><img src="images/news6.jpg" alt="Team Canada O.M.H.A">
       <h3>Team Canada 72 at the O.M.H.A</h3>
       <h4>05 DEC 2016</h4>
     </a>
@@ -208,14 +208,80 @@
 <section class="row" id="botiqueHome">
   <h2 class="hide">Botique</h2>
     <section class="small-12 columns">
-        <h2>Botique</h2>
+        <a href="404.html"><h2>Botique</h2></a>
 
-<img src="images/merch1.jpg" alt="Team Canada 72 Home Jersey">
-        <p>Team Canada '72 - Home</p>
-        <p>$129.99</p>
-        <a href="#"><button class="grayButton" type="button">
-          Add to Cart
-        </button></a>
+
+        <div class="botiqueCarousel">
+
+          <div>
+            <a href="404.html"><img src="images/botique1.jpg" alt="Team Canada 72 Home Jersey">
+              <h3>Team Canada '72 - Home</h3>
+              <h4>$129.99</h4>
+              <button class="botiqueButton">Add to Cart</button>
+            </a>
+          </div>
+
+          <div>
+            <a href="404.html"><img src="images/botique2.jpg" alt="Paul Henderson Goal T-Shirt">
+              <h3>Paul Henderson Goal T-Shirt</h3>
+              <h4>$19.99</h4>
+              <button class="botiqueButton">Add to Cart</button>
+            </a>
+          </div>
+
+          <div>
+            <a href="404.html"><img src="images/botique3.jpg" alt="40th Anniversary Card Set">
+              <h3>40th Anniversary Card Set</h3>
+              <h4>$24.99</h4>
+              <button class="botiqueButton">Add to Cart</button>
+            </a>
+          </div>
+
+          <div>
+            <a href="404.html"><img src="images/botique4.jpg" alt="Curse of Clara">
+              <h3>Tony Esposito '72 Signed Puck</h3>
+              <h4>$79.99</h4>
+              <button class="botiqueButton">Add to Cart</button>
+            </a>
+          </div>
+
+          <div>
+            <a href="404.html"><img src="images/botique5.jpg" alt="Team Canada 72 Away Jersey">
+              <h3>Team Canada '72 - Away</h3>
+              <h4>$129.99</h4>
+              <button class="botiqueButton">Add to Cart</button>
+            </a>
+          </div>
+
+          <div>
+            <a href="404.html"><img src="images/botique6.jpg" alt="Paul Henderson Signed Stick">
+              <h3>Paul Henderson Signed Stick</h3>
+              <h4>$129.99</h4>
+              <button class="botiqueButton">Add to Cart</button>
+            </a>
+          </div>
+
+          <div>
+            <a href="404.html"><img src="images/botique7.jpg" alt="Paul Henderson Signed Puck">
+              <h3>Paul Henderson Autographed 72 Puck</h3>
+              <h4>$79.99</h4>
+              <button class="botiqueButton">Add to Cart</button>
+            </a>
+          </div>
+
+          <div>
+            <a href="404.html"><img src="images/botique8.jpg" alt="Paul Henderson Talking Card Set">
+              <h3>Paul Henderson Talking Card Set</h3>
+              <h4>$19.99</h4>
+              <button class="botiqueButton">Add to Cart</button>
+            </a>
+          </div>
+
+
+
+        </div>
+
+
     </section>
   </section>
 <!--End of Botique Section-->
@@ -288,7 +354,7 @@
 
 <script>
 $(document).ready(function(){
-  $('.your-class').slick({
+  $('.newsCarousel').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     infinite: true,
@@ -312,6 +378,51 @@ $(document).ready(function(){
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+
+
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $('.botiqueCarousel').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    infinite: true,
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    responsive: [
+    {
+      breakpoint: 1015,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
       }
     },
     {

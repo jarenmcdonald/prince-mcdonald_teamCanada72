@@ -454,29 +454,107 @@ p {
 }
 
 /*Botique Home*/
-#botiqueHome {
-  background-color: $primaryWhite;
-  color: $primaryGray;
-  font-size: 1.2em;
-  font-family: $gentiumBook;
 
-h2 {
+
+/*Botique*/
+#botiqueHome
+{
+  padding-bottom: 40px;
+  border-bottom: solid 1px #ddd;
+
+  h2
+  {
+    color: $primaryRed;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: $openSans;
+    font-weight: $bold;
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    -webkit-transition: all ease.2s;
+    -moz-transition: all ease .2s;
+    -o-transition: all ease .2s;
+    transition: all ease.2s;
+  }
+
+  h2:hover
+  {
+      color: lighten($primaryGray, 28)
+  }
+
+h3 {
   color: $primaryRed;
-  font-size: 1.5em;
-  text-align: center;
   text-transform: uppercase;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  text-align: left;
+  font-family: $openSans;
+  font-weight: $bold;
+  font-size: 1em;
+  height: 40px;
+  -webkit-transition: all ease.2s;
+  -moz-transition: all ease .2s;
+  -o-transition: all ease .2s;
+  transition: all ease.2s;
+  padding-right: 20%;
 }
 
-p {
-  text-align: center;
-  margin: 0px;
+h3:hover
+{
+  color: lighten($primaryRed, 28)
+}
+
+h4 {
+  color: #888;
+  text-transform: uppercase;
+  text-align: left;
+  font-family: $openSans;
+  margin-top: 0px;
+  font-size: .8em;
+}
+
+h4:hover
+{
+  text-decoration: underline;
+}
+
+img
+{
+  padding-right: 20px;
+  opacity: 1;
+  -webkit-transition: all ease.2s;
+  -moz-transition: all ease .2s;
+  -o-transition: all ease .2s;
+  transition: all ease.2s;
+}
+
+img:hover
+{
+  opacity: .8;
+}
+
+}
+
+.botiqueButton
+{
+  background-color: $primaryGray;
+  font-family: $openSans;
+  font-weight: $regular;
+  text-transform: uppercase;
+  font-size: .8em;
+  padding:10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.botiqueButton:hover
+{
+  background-color: $primaryRed;
 }
 
 
 
-}
 
 
 /*Footer*/
@@ -692,6 +770,9 @@ p {
     margin-bottom: 20px;
   }
   }
+
+
+
 
 /*Footer*/
     #mainFooter {
@@ -956,6 +1037,11 @@ p {
     }
     }
 
+
+
+
+
+
   /*Footer*/
 
   #footerBG
@@ -1077,7 +1163,7 @@ p {
 //
 
 
-/*EVEBTS PAGE*/
+/*EVENTS PAGE*/
 .events {
   margin-top: 100px;
   background-color: black;

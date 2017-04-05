@@ -306,21 +306,73 @@ a:hover {
     padding-bottom: 10px; }
 
 /*Botique Home*/
+/*Botique*/
 #botiqueHome {
-  background-color: #fafafa;
-  color: #282828;
-  font-size: 1.2em;
-  font-family: "Gentium Book Basic", serif; }
+  padding-bottom: 40px;
+  border-bottom: solid 1px #ddd; }
   #botiqueHome h2 {
     color: #d4222a;
-    font-size: 1.5em;
-    text-align: center;
     text-transform: uppercase;
-    padding-top: 20px;
-    padding-bottom: 20px; }
-  #botiqueHome p {
-    text-align: center;
-    margin: 0px; }
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    -webkit-transition: all ease 0.2s;
+    -moz-transition: all ease .2s;
+    -o-transition: all ease .2s;
+    transition: all ease 0.2s; }
+  #botiqueHome h2:hover {
+    color: #6f6f6f; }
+  #botiqueHome h3 {
+    color: #d4222a;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    height: 40px;
+    -webkit-transition: all ease 0.2s;
+    -moz-transition: all ease .2s;
+    -o-transition: all ease .2s;
+    transition: all ease 0.2s;
+    padding-right: 20%; }
+  #botiqueHome h3:hover {
+    color: #ee979a; }
+  #botiqueHome h4 {
+    color: #888;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 0px;
+    font-size: .8em; }
+  #botiqueHome h4:hover {
+    text-decoration: underline; }
+  #botiqueHome img {
+    padding-right: 20px;
+    opacity: 1;
+    -webkit-transition: all ease 0.2s;
+    -moz-transition: all ease .2s;
+    -o-transition: all ease .2s;
+    transition: all ease 0.2s; }
+  #botiqueHome img:hover {
+    opacity: .8; }
+
+.botiqueButton {
+  background-color: #282828;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: .8em;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  margin-bottom: 30px; }
+
+.botiqueButton:hover {
+  background-color: #d4222a; }
 
 /*Footer*/
 #mainFooter {
@@ -691,7 +743,7 @@ a:hover {
   #content {
     display: inline;
     float: right; } }
-/*EVEBTS PAGE*/
+/*EVENTS PAGE*/
 .events {
   margin-top: 100px;
   background-color: black;
