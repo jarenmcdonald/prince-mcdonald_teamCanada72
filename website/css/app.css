@@ -7,6 +7,14 @@ body {
   margin: 0;
   background-image: url("../images/ice_age.png"); }
 
+::selection {
+  background: #df8f92;
+  /* WebKit/Blink Browsers */ }
+
+::-moz-selection {
+  background: #df8f92;
+  /* Gecko Browsers */ }
+
 p {
   font-size: 1em; }
 
@@ -52,6 +60,8 @@ a:hover {
   font-weight: 400;
   text-transform: uppercase;
   font-size: .9em; }
+  .redButton a, .whiteButton a, .grayButton a {
+    color: #fafafa; }
 
 .redButton:hover, .whiteButton:hover, .grayButton:hover {
   background-color: #282828; }
@@ -59,11 +69,15 @@ a:hover {
 .whiteButton {
   background-color: #fafafa;
   color: #d4222a; }
+  .whiteButton a {
+    color: #d4222a; }
 
 .grayButton {
   background-color: #282828;
   color: #fafafa;
   margin-top: 20px; }
+  .grayButton a {
+    color: #282828; }
 
 .submitButton {
   background-color: #d4222a;
@@ -229,7 +243,14 @@ a:hover {
     display: inline; }
   #heroSocial ul img {
     margin-top: 20px;
-    max-width: 15%; }
+    max-width: 15%;
+    opacity: 1;
+    -webkit-transition: all ease 0.2s;
+    -moz-transition: all ease .2s;
+    -o-transition: all ease .2s;
+    transition: all ease 0.2s; }
+  #heroSocial ul img:hover {
+    opacity: .2; }
   #heroSocial ul #twitterimg {
     margin-left: 55px;
     margin-right: 55px; }
@@ -304,6 +325,9 @@ a:hover {
     display: none; }
   #tourHome p {
     padding-bottom: 10px; }
+
+#learnHomeButton {
+  font-weight: 700; }
 
 /*Botique Home*/
 /*Botique*/
@@ -432,6 +456,9 @@ a:hover {
     margin: 0 auto;
     width: 60%;
     margin-bottom: 40px; }
+
+  .redButton:focus, .whiteButton:focus, .grayButton:focus {
+    background-color: #d4222a; }
 
   /*Hero Banner*/
   .hero {
@@ -649,19 +676,23 @@ a:hover {
     #learnHome h2 {
       font-size: 2em;
       padding-top: 60px;
-      padding-bottom: 30px; }
+      padding-bottom: 30px;
+      text-align: center; }
     #learnHome h3 {
-      text-align: right; }
+      text-align: left; }
     #learnHome img {
-      margin: 0 auto; }
+      margin-top: 40px; }
     #learnHome p {
       margin: 0; }
 
   /*Tour Home*/
-  #tourHome {
-    background-image: url("../images/bg2.jpg");
+  #tourBG {
+    background-image: url("../images/bg3.jpg");
     background-repeat: no-repeat;
-    background-size: 120%; }
+    background-size: 100%; }
+
+  #tourHome {
+    background: none; }
     #tourHome h3 {
       display: block;
       font-size: 1em;
@@ -677,6 +708,9 @@ a:hover {
       display: block;
       margin: 0 auto;
       margin-bottom: 20px; }
+    #tourHome #tourButton {
+      margin: 0 auto;
+      margin-bottom: 40px; }
 
   /*Footer*/
   #footerBG {
@@ -741,16 +775,11 @@ a:hover {
 
   #content {
     display: inline;
-<<<<<<< HEAD
-    float: right; } }
-/*EVENTS PAGE*/
-=======
     float: right; }
 
   #footeNav {
     display: none; } }
-/*EVEBTS PAGE*/
->>>>>>> origin/master
+/*EVENTS PAGE*/
 .events {
   margin-top: 100px;
   background-color: black;

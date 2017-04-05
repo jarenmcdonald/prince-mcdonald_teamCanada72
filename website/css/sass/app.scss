@@ -27,6 +27,13 @@ body {
     background-image: url("../images/ice_age.png");
 }
 
+::selection {
+  background: #df8f92; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #df8f92; /* Gecko Browsers */
+}
+
 p {
   font-size: 1em;
 }
@@ -88,6 +95,11 @@ a:hover {
   font-weight: $regular;
   text-transform: uppercase;
   font-size: .9em;
+
+a {
+  color: $primaryWhite;
+}
+
 }
 
 .redButton:hover
@@ -101,6 +113,10 @@ a:hover {
   @extend .redButton;
   background-color: $primaryWhite;
   color: $primaryRed;
+
+  a {
+    color: $primaryRed;
+  }
 }
 
 .grayButton
@@ -109,6 +125,11 @@ a:hover {
   background-color: $primaryGray;
   color: $primaryWhite;
   margin-top: 20px;
+
+  a {
+    color: $primaryGray;
+  }
+
 }
 
 
@@ -343,6 +364,15 @@ h2 {
           img {
               margin-top: 20px;
               max-width: 15%;
+              opacity: 1;
+              -webkit-transition: all ease.2s;
+              -moz-transition: all ease .2s;
+              -o-transition: all ease .2s;
+              transition: all ease.2s;
+          }
+
+          img:hover {
+            opacity: .2;
           }
 
           #twitterimg {
@@ -451,6 +481,11 @@ h3 {
 p {
   padding-bottom: 10px;
 }
+}
+
+#learnHomeButton
+{
+  font-weight: $bold;
 }
 
 /*Botique Home*/
@@ -650,6 +685,11 @@ img:hover
     margin: 0 auto;
     width: 60%;
     margin-bottom: 40px;
+  }
+
+  .redButton:focus
+  {
+    background-color: $primaryRed;
   }
 
 
@@ -1001,15 +1041,16 @@ img:hover
         font-size: 2em;
         padding-top: 60px;
         padding-bottom: 30px;
+        text-align: center;
       }
 
       h3
       {
-        text-align: right;
+        text-align: left;
       }
 
     img {
-      margin: 0 auto;
+      margin-top: 40px;
     }
 
     p {
@@ -1020,10 +1061,17 @@ img:hover
     }
 
     /*Tour Home*/
-    #tourHome {
-      background-image: url("../images/bg2.jpg");
+
+    #tourBG
+    {
+      background-image: url("../images/bg3.jpg");
       background-repeat: no-repeat;
-      background-size: 120%;
+      background-size: 100%;
+    }
+
+    #tourHome {
+      background: none;
+
 
     h3 {
       display: block;
@@ -1042,6 +1090,12 @@ img:hover
       display: block;
       margin: 0 auto;
       margin-bottom: 20px;
+    }
+
+    #tourButton
+    {
+      margin: 0 auto;
+      margin-bottom: 40px;
     }
     }
 
