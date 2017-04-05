@@ -606,6 +606,9 @@ a:hover {
     display: inline;
     float: right; }
 
+  #mainNav {
+    opacity: .95; }
+
   #mainNav ul {
     float: right;
     list-style-type: none;
