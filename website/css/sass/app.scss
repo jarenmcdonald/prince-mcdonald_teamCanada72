@@ -987,6 +987,116 @@ p {
 //
 
 
+/*EVEBTS PAGE*/
+.events {
+  margin-top: 100px;
+  background-color: black;
+  background-image: url("../images/hero_bg1.jpg");
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-size: 110%;
+  height: 150px;
+  -webkit-transition: background 1s linear;
+  -moz-transition: background 1s linear;
+  -o-transition:background 1s linear;
+  transition: background 1s linear;
+}
+
+#eventsTitle
+{
+  h2 {
+    color: $primaryRed;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-family: $openSans;
+    font-weight: $bold;
+      font-size: 1.5em;
+  }
+
+  h3
+  {
+    color: #898898;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: $gentiumBook;
+    font-size: 1.3em;
+    font-style: italic;
+  }
+
+}
+
+#eventsInfo
+{
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+p
+{
+  color: $primaryGray;
+  font-size: 1.2em;
+  font-family: $gentiumBook;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  color: $secondaryRed;
+  font-size: 1.2em;
+  font-family: $gentiumBook;
+}
+
+img
+{
+  margin-bottom: 20px;
+}
+}
+
+
+/* Medium and up  */
+@media screen and (min-width: 40em) {
+
+  #eventsTitle
+  {
+    h2 {
+        font-size: 2.1em;
+    }
+
+    h3
+    {
+      font-size: 1.3em;
+    }
+
+  }
+
+}
+
+/* Large and up  */
+@media screen and (min-width: 40em) {
+
+  #eventsTitle
+  {
+    h2 {
+        font-size: 2.3em;
+    }
+
+    h3
+    {
+      font-size: 1.4em;
+    }
+
+  }
+
+}
+
+
+
+//
+//
+
+
 
 /*PARTNERS PAGE*/
 .partners {
