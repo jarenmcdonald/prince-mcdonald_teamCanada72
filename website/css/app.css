@@ -674,7 +674,7 @@ h1 {
   border-top: solid 1px #e1e1e1;
   padding-top: 35px;
   border-bottom: solid 1px #e1e1e1;
-  padding-bottom: 35px; }
+  padding-bottom: 15px; }
   #partnersThumb li {
     position: relative; }
   #partnersThumb h3 {
@@ -705,7 +705,7 @@ h1 {
     opacity: 1; }
 
 #partnersBecome {
-  margin-top: 30px;
+  margin-top: 0px;
   margin-bottom: 50px; }
   #partnersBecome p {
     color: #282828;
