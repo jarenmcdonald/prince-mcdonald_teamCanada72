@@ -532,6 +532,8 @@ a:hover {
           color: #c6c6c6;
           font-size: 1em;
           font-family: "Open Sans", sans-serif; }
+        #mainFooter #footerNav ul li a:hover {
+          opacity: .6; }
   #mainFooter #footerSocial {
     border-top: none;
     padding-top: 30px;
@@ -539,6 +541,8 @@ a:hover {
     border-bottom: none; }
     #mainFooter #footerSocial img {
       max-width: 50%; }
+    #mainFooter #footerSocial a:hover {
+      opacity: .6; }
   #mainFooter #footerNavSmall {
     display: none; }
   #mainFooter #copyright {
@@ -679,28 +683,14 @@ a:hover {
     width: 100%;
     background-color: #282828; }
 
+  #footerNav {
+    display: none; }
+
   #mainFooter #officialSite {
     margin-top: 20px;
     padding-bottom: 5px; }
     #mainFooter #officialSite p {
       font-size: 1em; }
-  #mainFooter #footerNav {
-    display: block;
-    margin-top: 15px;
-    padding-bottom: 0px;
-    text-align: center; }
-    #mainFooter #footerNav ul {
-      margin: 0; }
-      #mainFooter #footerNav ul li {
-        list-style-type: none;
-        display: inline-block;
-        margin-bottom: 0px;
-        margin-right: 10px; }
-        #mainFooter #footerNav ul li a {
-          font-size: .563em;
-          color: #c6c6c6;
-          font-size: 1em;
-          font-family: "Open Sans", sans-serif; }
   #mainFooter #footerSocial {
     border-top: none;
     padding-top: 30px;
@@ -709,7 +699,16 @@ a:hover {
     #mainFooter #footerSocial img {
       max-width: 50%; }
   #mainFooter #footerNavSmall {
-    display: none; }
+    display: block;
+    margin-top: 30px;
+    padding-bottom: 0px; }
+    #mainFooter #footerNavSmall ul li {
+      display: inline;
+      margin-right: 15px; }
+      #mainFooter #footerNavSmall ul li a:hover {
+        opacity: .6; }
+    #mainFooter #footerNavSmall ul li:last-child {
+      margin-right: 0px; }
   #mainFooter #copyright {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -742,8 +741,16 @@ a:hover {
 
   #content {
     display: inline;
+<<<<<<< HEAD
     float: right; } }
 /*EVENTS PAGE*/
+=======
+    float: right; }
+
+  #footeNav {
+    display: none; } }
+/*EVEBTS PAGE*/
+>>>>>>> origin/master
 .events {
   margin-top: 100px;
   background-color: black;

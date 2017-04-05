@@ -806,6 +806,10 @@ img:hover
                         font-size: 1em;
                         font-family: $openSans;
                     }
+
+                    a:hover {
+                        opacity: .6;
+                    }
                 }
             }
         }
@@ -818,6 +822,10 @@ img:hover
 
             img {
                 max-width: 50%;
+            }
+
+            a:hover {
+                opacity: .6;
             }
         }
 
@@ -1050,6 +1058,10 @@ img:hover
     background-color: $primaryGray;
   }
 
+  #footerNav {
+      display: none;
+  }
+
       #mainFooter {
           #officialSite {
               margin-top: 20px;
@@ -1057,31 +1069,6 @@ img:hover
 
               p {
                   font-size: 1em;
-              }
-          }
-
-          #footerNav {
-              display: block;
-              margin-top: 15px;
-              padding-bottom: 0px;
-              text-align: center;
-
-              ul {
-              margin: 0;
-
-                  li {
-                      list-style-type: none;
-                      display: inline-block;
-                      margin-bottom: 0px;
-                      margin-right: 10px;
-
-                      a {
-                          font-size: .563em;
-                          color: #c6c6c6;
-                          font-size: 1em;
-                          font-family: $openSans;
-                      }
-                  }
               }
           }
 
@@ -1097,7 +1084,22 @@ img:hover
           }
 
           #footerNavSmall {
-              display: none;
+              display: block;
+              margin-top: 30px;
+              padding-bottom: 0px;
+
+             ul {
+                 li {
+                     display: inline;
+                     margin-right: 15px;
+                     a:hover {
+                         opacity: .6;
+                     }
+                }
+                li:last-child {
+                    margin-right: 0px;
+                }
+             }
           }
 
           #copyright {
@@ -1154,6 +1156,12 @@ img:hover
     {
       display: inline;
       float: right;
+    }
+
+
+    //Footer
+    #footeNav {
+        display: none;
     }
 }
 
