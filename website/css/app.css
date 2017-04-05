@@ -1010,6 +1010,9 @@ h1 {
 
 /* Large and up - 1024px */
 @media screen and (min-width: 64em) {
+  #contactInfo {
+    margin-top: 50px; }
+
   .submitButton {
     width: 100px;
     padding-top: 10px;
