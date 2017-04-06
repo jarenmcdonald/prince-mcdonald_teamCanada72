@@ -2597,3 +2597,107 @@ img {
 }
 
 }
+
+
+#articleShare
+{
+  h2 {
+    width: 100%;
+    background-color: $primaryGray;
+    text-align: center;
+    color: $primaryWhite;
+    font-family: $openSans;
+    font-weight: $bold;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+
+
+}
+
+#facebookShare
+{
+  background-color: #3b5998;
+  width: 100%;
+}
+
+#twitterShare
+{
+  background-color: #1ea1f2;
+  width: 100%;
+}
+
+
+#moreNews
+{
+  h2 {
+    width: 100%;
+    background-color: $primaryGray;
+    text-align: center;
+    color: $primaryWhite;
+    font-family: $openSans;
+    font-weight: $bold;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    color: $primaryRed;
+    font-family: $openSans;
+    font-weight: $bold;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-bottom: 0px;
+  }
+
+  h4 {
+    color: #aaa;
+    font-family: $openSans;
+    text-transform: uppercase;
+    font-size: 1em;
+  }
+
+  img
+  {
+    margin-bottom: 5px;
+    width: 100%;
+
+  }
+
+}
+
+#moreNewsButton
+{
+  background-color: $primaryGray;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+
+#dasvidaniya
+{
+    background-image: url("../images/vladmir_petrov.jpg");
+}
+
+#teamThanks
+{
+    background-image: url("../images/summit_thanks.jpg");
+}
+
+#governmentHonours
+{
+    background-image: url("../images/government_honours.jpg");
+}
+
+#preTourMedia
+{
+    background-image: url("../images/pre_tour_media.jpg");
+}
