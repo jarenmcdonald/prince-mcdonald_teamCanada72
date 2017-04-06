@@ -783,6 +783,7 @@ a:hover {
 
   #footeNav {
     display: none; } }
+<<<<<<< HEAD
 /*About page*/
 .aboutHero {
   margin-top: 100px;
@@ -954,6 +955,294 @@ a:hover {
       width: 80%;
       margin: 0 auto;
       margin-bottom: 100px; } }
+=======
+/*EDUCATION PAGE*/
+.education {
+  margin-top: 100px;
+  background-color: black;
+  background-image: url("../images/hero_bg1.jpg");
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-size: 110%;
+  height: 150px;
+  -webkit-transition: background 1s linear;
+  -moz-transition: background 1s linear;
+  -o-transition: background 1s linear;
+  transition: background 1s linear; }
+
+#educationTitle h2 {
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em; }
+
+.bold {
+  font-weight: bold; }
+
+#educationInfo {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  border-bottom: solid 1px #CCC;
+  padding-bottom: 40px;
+  margin-bottom: 40px; }
+  #educationInfo p {
+    color: #282828;
+    font-size: 1.25em;
+    font-family: "Gentium Book Basic", serif; }
+  #educationInfo p:first-child {
+    margin-top: 30px; }
+  #educationInfo #facets {
+    margin-bottom: 10px; }
+  #educationInfo ul {
+    padding-left: 15px;
+    margin: 0;
+    color: #282828;
+    font-size: 1.25em;
+    font-family: "Gentium Book Basic", serif; }
+
+#educationCurriculumHome {
+  padding-top: 0px;
+  background-color: #fafafa;
+  color: #282828;
+  font-size: 1.2em;
+  font-family: "Gentium Book Basic", serif; }
+  #educationCurriculumHome h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #d4222a;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 25px;
+    padding-bottom: 5px; }
+  #educationCurriculumHome h3 {
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fafafa;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    padding-bottom: 20px; }
+  #educationCurriculumHome img {
+    padding-bottom: 25px; }
+  #educationCurriculumHome p {
+    padding-bottom: 10px; }
+
+#minorHockeyHome {
+  background-color: #d4222a;
+  color: #fafafa;
+  font-size: 1.2em;
+  font-family: "Gentium Book Basic", serif; }
+  #minorHockeyHome h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #fafafa;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 25px;
+    padding-bottom: 5px; }
+  #minorHockeyHome h3 {
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fafafa;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    padding-bottom: 20px; }
+  #minorHockeyHome img {
+    padding-bottom: 25px; }
+  #minorHockeyHome p {
+    padding-bottom: 10px; }
+
+#learnHomeButton {
+  font-weight: 700; }
+
+#nationalContestHome {
+  padding-top: 0px;
+  background-color: #282828;
+  color: #fafafa;
+  font-size: 1.2em;
+  font-family: "Gentium Book Basic", serif; }
+  #nationalContestHome h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #fafafa;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 25px;
+    padding-bottom: 5px; }
+  #nationalContestHome h3 {
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fafafa;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    padding-bottom: 20px; }
+  #nationalContestHome img {
+    padding-bottom: 25px; }
+  #nationalContestHome p {
+    padding-bottom: 10px; }
+
+#centreExcellenceHome {
+  background-color: #fafafa;
+  color: #282828;
+  font-size: 1.2em;
+  font-family: "Gentium Book Basic", serif; }
+  #centreExcellenceHome h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #d4222a;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 25px;
+    padding-bottom: 5px; }
+  #centreExcellenceHome h3 {
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fafafa;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    padding-bottom: 20px; }
+  #centreExcellenceHome img {
+    padding-bottom: 25px; }
+  #centreExcellenceHome p {
+    padding-bottom: 10px; }
+
+#learnHomeButton {
+  font-weight: 700; }
+
+/* Medium and up  */
+@media screen and (min-width: 40em) {
+  #educationCurriculumHome img {
+    display: block;
+    margin: 0 auto; }
+  #educationCurriculumHome p {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+
+  #minorHockeyHome h2 {
+    padding-bottom: 10px; }
+  #minorHockeyHome img {
+    display: block;
+    margin: 0 auto; }
+  #minorHockeyHome p {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+
+  #nationalContestHome img {
+    display: block;
+    margin: 0 auto; }
+  #nationalContestHome p {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+
+  #centreExcellenceHome img {
+    display: block;
+    margin: 0 auto; }
+  #centreExcellenceHome p {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+
+  /* Large and up  */ }
+@media screen and (min-width: 40em) and (min-width: 64em) {
+  #educationTitle h2 {
+    font-size: 2.3em; }
+  #educationTitle h3 {
+    font-size: 1.4em; }
+
+  #educationCurriculumBG {
+    width: 100%;
+    background-color: #FFF; }
+
+  #educationCurriculumHome {
+    width: 80%; }
+    #educationCurriculumHome h2 {
+      font-size: 2em;
+      padding-top: 60px;
+      padding-bottom: 30px;
+      text-align: center; }
+    #educationCurriculumHome h3 {
+      text-align: left; }
+    #educationCurriculumHome img {
+      margin-top: 10px; }
+    #educationCurriculumHome p {
+      margin: 0; } }
+@media screen and (min-width: 40em) {
+  #minorHockeyBG {
+    width: 100%;
+    background-color: #FFF; }
+
+  #minorHockeyHome {
+    width: 80%; }
+    #minorHockeyHome h2 {
+      font-size: 2em;
+      padding-top: 60px;
+      padding-bottom: 10px;
+      text-align: center; }
+    #minorHockeyHome h3 {
+      text-align: left; }
+    #minorHockeyHome img {
+      margin-top: 10px; }
+    #minorHockeyHome p {
+      margin: 0; } }
+#nationalContestTitle h2 {
+  font-size: 2.3em; }
+#nationalContestTitle h3 {
+  font-size: 1.4em; }
+
+#nationalContestBG {
+  width: 100%;
+  background-color: #FFF; }
+
+#nationalContestHome {
+  width: 80%; }
+  #nationalContestHome h2 {
+    font-size: 2em;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    text-align: center; }
+  #nationalContestHome h3 {
+    text-align: left; }
+  #nationalContestHome img {
+    margin-top: 10px; }
+  #nationalContestHome p {
+    margin: 0; }
+
+#centreExcellenceBG {
+  width: 100%;
+  background-color: #FFF; }
+
+#centreExcellenceHome {
+  width: 80%; }
+  #centreExcellenceHome h2 {
+    font-size: 2em;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    text-align: center; }
+  #centreExcellenceHome h3 {
+    text-align: left; }
+  #centreExcellenceHome img {
+    margin-top: 10px; }
+  #centreExcellenceHome p {
+    margin: 0; }
+
+>>>>>>> origin/master
 /*EVENTS PAGE*/
 .events {
   margin-top: 100px;
