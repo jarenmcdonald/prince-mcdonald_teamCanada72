@@ -1553,7 +1553,7 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   padding-top: 25px;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
 }
 
 h3 {
@@ -1591,7 +1591,7 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   padding-top: 25px;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
 }
 
 h3 {
@@ -1651,7 +1651,7 @@ img {
 }
 
 p {
-  padding-bottom: 10px;
+  padding-bottom: 25px;
 }
 
 
@@ -1671,7 +1671,7 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   padding-top: 25px;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
 }
 
 h3 {
@@ -1689,7 +1689,7 @@ img {
 }
 
 p {
-  padding-bottom: 10px;
+  padding-bottom: 25px;
 }
 }
 
@@ -1786,7 +1786,7 @@ p {
       #educationCurriculumBG
       {
         width: 100%;
-        background-color: #FFF;
+        background-color: $primaryWhite;
       }
 
 
@@ -1818,7 +1818,7 @@ p {
 #minorHockeyBG
 {
   width: 100%;
-  background-color: #FFF;
+  background-color: $primaryRed;
 }
 
 
@@ -1863,7 +1863,7 @@ margin: 0;
     #nationalContestBG
     {
       width: 100%;
-      background-color: #FFF;
+      background-color: $primaryGray;
     }
 
 
@@ -1895,7 +1895,7 @@ margin: 0;
 #centreExcellenceBG
 {
 width: 100%;
-background-color: #FFF;
+background-color: $primaryWhite;
 }
 
 
