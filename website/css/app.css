@@ -1,5 +1,9 @@
 /*Variables*/
 /*Body*/
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-size: 16px;
   background-color: #fff;
