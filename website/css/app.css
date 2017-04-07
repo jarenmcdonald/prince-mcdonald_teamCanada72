@@ -59,8 +59,7 @@ a:hover {
   color: #fafafa;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  text-transform: uppercase;
-  font-size: .9em; }
+  text-transform: uppercase; }
   .redButton a, .whiteButton a, .grayButton a {
     color: #fafafa; }
 
