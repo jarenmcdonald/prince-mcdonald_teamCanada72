@@ -1225,8 +1225,6 @@ img:hover
 //
 
 /*About page*/
-
-
 .aboutHero {
   margin-top: 100px;
   background-color: white;
@@ -1332,136 +1330,6 @@ img:hover {
 }
 
 }
-
-#summitSeriesBG {
-    margin-top: 30px;
-    font-family: $gentiumBook;
-    font-size: 1.2em;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #CCC;
-    background-color: $primaryWhite;
-}
-
-    #summitSeriesCon {
-        h2 {
-            font-family: $openSans;
-            font-weight: $bold;
-            color: $primaryGray;
-            font-size: 1.5em;
-            text-align: center;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-        }
-    }
-
-    #summitSeriesInfo {
-        margin-top: 20px;
-
-        h3 {
-            font-size: 1.125em;
-            text-align: center;
-            text-transform: uppercase;
-            color: $primaryGray;
-            font-family: $openSans;
-            font-weight: $bold;
-            margin-bottom: 25px;
-        }
-
-        .quoteText {
-            font-style: italic;
-            font-size: 1.25em;
-            font-weight: $bold;
-        }
-    }
-
-
-#mapBG {
-    padding-top: 30px;
-    font-family: $gentiumBook;
-    font-size: 1.2em;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #CCC;
-    background-color: $primaryGray;
-}
-
-#mapTitle h2 {
-    font-family: $openSans;
-    font-weight: $bold;
-    color: $primaryWhite;
-    font-size: 1.5em;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-#map {
-	position: relative;
-	overflow: hidden;
-}
-
-    .circle {
-    	background-color: $primaryRed;
-    	border-radius: 20px;
-    	width: 20px;
-    	height: 20px;
-    	border: 2px solid $primaryRed;
-    	position: absolute;
-
-    	animation-name: glow;
-    	animation-duration: 1s;
-    	animation-iteration-count: infinite;
-    	animation-direction: alternate;
-    	animation-timing-function: ease-in-out;
-    }
-
-    @keyframes glow {
-    	0%{box-shadow: 0 0 2px rgba(212,34,42,0.7)};
-    	100%{box-shadow: 0 0 25px rgba(212,34,42,0.7)};
-    }
-
-    #circle0 {
-    	top: 465px;
-    	left: 9%;
-    }
-
-    #circle1 {
-    	top: 530px;
-    	left: 40%;
-    }
-
-    #circle2 {
-    	top: 650px;
-    	left: 64%;
-    }
-
-    #circle3 {
-        top: 598px;
-    	left: 70%;
-    }
-
-    .boxes {
-    	width: 240px;
-    	height: 420px;
-    	background: rgba(255,255,255,.7);
-    	padding: 20px;
-    	position: absolute;
-    	opacity: 0;
-    }
-
-    .boxes img {
-    	margin-bottom: 20px;
-    }
-
-    #info0 {
-    	top: 50px;
-    	left: 70%;
-    }
-
-    #info1 {
-    	top: 50px;
-    	left: 2%;
-    }
-
 
 
 #team
@@ -1572,27 +1440,6 @@ p {
 }
 
 }
-
-
-#summitSeriesCon h2 {
-    font-size: 2.125em;
-}
-
-#summitSeriesInfo {
-    h3 {
-        font-size: 1.75em;
-    }
-    .quoteText {
-        font-size: 1.125em;
-    }
-}
-
-#summitSeriesCopy {
-    p {
-        font-size: 1.063em;
-    }
-}
-
 }
 
 /* Large and up - 1024px */
@@ -1612,12 +1459,6 @@ p {
   margin-bottom: 100px;
 }
 
-}
-
-#summitSeriesInfo {
-    .quoteText {
-        font-size: 1.188em;
-    }
 }
 }
 
@@ -2152,9 +1993,6 @@ ul {
 
 img
 {
-  margin-bottom: 20px;
-  display: block;
-  margin: 0 auto;
   margin-bottom: 20px;
 }
 }
