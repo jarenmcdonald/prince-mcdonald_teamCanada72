@@ -327,9 +327,6 @@ a:hover {
   #tourHome p {
     padding-bottom: 10px; }
 
-#learnHomeButton {
-  font-weight: 400; }
-
 /*Botique Home*/
 /*Botique*/
 #botiqueHome {
@@ -922,7 +919,6 @@ a:hover {
   background-color: #d4222a;
   color: #fafafa;
   font-family: "Open Sans", sans-serif;
-  font-weight: 700;
   text-transform: uppercase;
   font-size: 1em; }
 
@@ -1015,7 +1011,7 @@ a:hover {
     text-align: center;
     text-transform: uppercase;
     padding-top: 25px;
-    padding-bottom: 20px; }
+    padding-bottom: 5px; }
   #educationCurriculumHome h3 {
     font-size: 1em;
     text-align: center;
@@ -1025,7 +1021,9 @@ a:hover {
     font-weight: 700;
     padding-bottom: 20px; }
   #educationCurriculumHome img {
-    padding-bottom: 25px; }
+    padding-bottom: 25px;
+    display: block;
+    margin: 0 auto; }
   #educationCurriculumHome p {
     padding-bottom: 10px; }
 
@@ -1042,7 +1040,7 @@ a:hover {
     text-align: center;
     text-transform: uppercase;
     padding-top: 25px;
-    padding-bottom: 20px; }
+    padding-bottom: 5px; }
   #minorHockeyHome h3 {
     font-size: 1em;
     text-align: center;
@@ -1052,12 +1050,11 @@ a:hover {
     font-weight: 700;
     padding-bottom: 20px; }
   #minorHockeyHome img {
-    padding-bottom: 25px; }
+    padding-bottom: 25px;
+    display: block;
+    margin: 0 auto; }
   #minorHockeyHome p {
     padding-bottom: 10px; }
-
-#learnHomeButton {
-  font-weight: regular; }
 
 #nationalContestHome {
   padding-top: 0px;
@@ -1083,9 +1080,11 @@ a:hover {
     font-weight: 700;
     padding-bottom: 20px; }
   #nationalContestHome img {
-    padding-bottom: 25px; }
+    padding-bottom: 25px;
+    display: block;
+    margin: 0 auto; }
   #nationalContestHome p {
-    padding-bottom: 25px; }
+    padding-bottom: 10px; }
 
 #centreExcellenceHome {
   background-color: #fafafa;
@@ -1100,7 +1099,7 @@ a:hover {
     text-align: center;
     text-transform: uppercase;
     padding-top: 25px;
-    padding-bottom: 20px; }
+    padding-bottom: 5px; }
   #centreExcellenceHome h3 {
     font-size: 1em;
     text-align: center;
@@ -1110,12 +1109,11 @@ a:hover {
     font-weight: 700;
     padding-bottom: 20px; }
   #centreExcellenceHome img {
-    padding-bottom: 25px; }
+    padding-bottom: 25px;
+    display: block;
+    margin: 0 auto; }
   #centreExcellenceHome p {
-    padding-bottom: 25px; }
-
-#learnHomeButton {
-  font-weight: 400; }
+    padding-bottom: 10px; }
 
 /* Medium and up  */
 @media screen and (min-width: 40em) {
@@ -1155,12 +1153,12 @@ a:hover {
     width: 90%;
     display: block;
     margin: 0 auto;
-    margin-bottom: 20px; }
-
-  /* Large and up  */ }
-@media screen and (min-width: 40em) and (min-width: 64em) {
+    margin-bottom: 20px; } }
+/* Large and up  */
+@media screen and (min-width: 64em) {
   #educationTitle h2 {
-    font-size: 2.3em; }
+    font-size: 2.3em;
+    margin-top: 20px; }
   #educationTitle h3 {
     font-size: 1.4em; }
 
@@ -1172,8 +1170,8 @@ a:hover {
     width: 80%; }
     #educationCurriculumHome h2 {
       font-size: 2em;
-      padding-top: 0px;
-      padding-bottom: 20px;
+      padding-top: q0px;
+      padding-bottom: 30px;
       text-align: left; }
     #educationCurriculumHome h3 {
       text-align: left; }
@@ -1233,7 +1231,7 @@ a:hover {
       font-size: 2em;
       padding-top: 60px;
       padding-bottom: 10px;
-      text-align: left; }
+      text-align: center; }
     #centreExcellenceHome h3 {
       text-align: left; }
     #centreExcellenceHome img {
@@ -1288,13 +1286,139 @@ a:hover {
   #eventsInfo img {
     margin-bottom: 20px; }
 
-/* Medium and up  */
-/* Large and up  */
+/* Meidum and up  */
 @media screen and (min-width: 40em) {
   #eventsTitle h2 {
     font-size: 2.3em; }
   #eventsTitle h3 {
     font-size: 1.4em; } }
+/*Tour Page*/
+.venue {
+  border-bottom: solid 1px #ccc;
+  margin-bottom: 20px; }
+
+.tour {
+  margin-top: 100px;
+  background-color: black;
+  background-image: url("../images/hero_bg4.jpg");
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-size: 110%;
+  height: 150px;
+  -webkit-transition: background 1s linear;
+  -moz-transition: background 1s linear;
+  -o-transition: background 1s linear;
+  transition: background 1s linear; }
+  .tour h1 {
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    /*50px*/
+    margin-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 2.2em;
+    /*2.8em*/ }
+
+#tourInfo {
+  border-bottom: solid 1px #ccc; }
+  #tourInfo h2 {
+    font-family: "Gentium Book Basic", serif;
+    color: #d4222a;
+    font-size: 1.4em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+    text-align: center; }
+  #tourInfo p {
+    font-family: "Gentium Book Basic", serif;
+    color: #282828;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+
+.tourTitle h2 {
+  font-family: "Open Sans", sans-serif;
+  color: #282828;
+  font-weight: 700;
+  font-size: 1.8em;
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase; }
+.tourTitle h3 {
+  font-family: "Open Sans", sans-serif;
+  color: #282828;
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.tourBody img {
+  margin-bottom: 20px;
+  width: 100%; }
+.tourBody ul {
+  list-style-type: none;
+  font-family: "Open Sans", sans-serif;
+  color: #282828;
+  font-size: 1em;
+  margin: 0 auto;
+  margin-bottom: 20px; }
+
+.tourPackages {
+  background-color: white;
+  margin-bottom: 20px; }
+  .tourPackages h2 {
+    margin-top: 20px;
+    font-family: "Gentium Book Basic", serif;
+    color: #282828;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center; }
+  .tourPackages p {
+    font-family: "Gentium Book Basic", serif;
+    color: #282828;
+    font-size: 1.2em; }
+
+/* Medium and up  */
+@media screen and (min-width: 40em) {
+  .tour h1 {
+    margin-top: 50px;
+    /*50px*/
+    font-size: 2.8em;
+    /*2.8em*/ }
+
+  #tourInfo h2 {
+    font-size: 1.6em; }
+
+  #ticketButton {
+    display: inline;
+    width: 45%; }
+
+  .tourBody ul li {
+    margin-bottom: 10px; } }
+/* Large and up  */
+@media screen and (min-width: 60em) {
+  #ticketButton {
+    display: inline;
+    width: 45%; }
+
+  #tourInfo h2 {
+    text-align: left; }
+
+  .tourTitle h2 {
+    text-align: left; }
+  .tourTitle h3 {
+    text-align: left; }
+
+  .tourBody img {
+    margin-top: 0px;
+    width: 100%; }
+
+  .tourBody ul li {
+    margin-bottom: 15px; }
+  .tourBody ul {
+    margin-bottom: 33px; } }
 /*PARTNERS PAGE*/
 .partners {
   margin-top: 100px;
