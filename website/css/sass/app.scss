@@ -484,10 +484,7 @@ p {
 }
 }
 
-#learnHomeButton
-{
-  font-weight: $bold;
-}
+
 
 /*Botique Home*/
 
@@ -1540,7 +1537,6 @@ th {
   background-color: $primaryRed;
   color: $primaryWhite;
   font-family: $openSans;
-  font-weight: $bold;
   text-transform: uppercase;
   font-size: 1em;
 }
@@ -1727,6 +1723,8 @@ h3 {
 
 img {
   padding-bottom: 25px;
+  display: block;
+  margin: 0 auto;
 }
 
 p {
@@ -1765,6 +1763,8 @@ h3 {
 
 img {
   padding-bottom: 25px;
+  display: block;
+  margin: 0 auto;
 }
 
 p {
@@ -1772,10 +1772,7 @@ p {
 }
 }
 
-#learnHomeButton
-{
-  font-weight: $bold;
-}
+
 
 #nationalContestHome {
     padding-top: 0px;
@@ -1807,6 +1804,8 @@ h3 {
 
 img {
   padding-bottom: 25px;
+  display: block;
+  margin: 0 auto;
 }
 
 p {
@@ -1845,6 +1844,8 @@ h3 {
 
 img {
   padding-bottom: 25px;
+  display: block;
+  margin: 0 auto;
 }
 
 p {
@@ -1852,10 +1853,6 @@ p {
 }
 }
 
-#learnHomeButton
-{
-  font-weight: $bold;
-}
 
 
 /* Medium and up  */
@@ -1926,6 +1923,8 @@ p {
   margin-bottom: 20px;
 }
 }
+}
+
 
 /* Large and up  */
 @media screen and (min-width: 64em) {
@@ -1933,6 +1932,7 @@ p {
   #educationTitle {
     h2 {
         font-size: 2.3em;
+        margin-top: 20px;
     }
 
     h3
@@ -1945,7 +1945,7 @@ p {
       #educationCurriculumBG
       {
         width: 100%;
-        background-color: #FFF;
+        background-color: $primaryWhite;
       }
 
 
@@ -1954,9 +1954,9 @@ p {
 
         h2 {
           font-size: 2em;
-          padding-top: 60px;
+          padding-top: q0px;
           padding-bottom: 30px;
-          text-align: center;
+          text-align: left;
         }
 
         h3
@@ -1973,11 +1973,11 @@ p {
       }
 
     }
-}
+
 #minorHockeyBG
 {
   width: 100%;
-  background-color: #FFF;
+  background-color: $primaryRed;
 }
 
 
@@ -1988,7 +1988,7 @@ p {
     font-size: 2em;
     padding-top: 60px;
     padding-bottom: 10px;
-    text-align: center;
+    text-align: left;
   }
 
   h3
@@ -2005,7 +2005,7 @@ margin: 0;
 }
 
 }
-}
+
 
 #nationalContestTitle {
   h2 {
@@ -2022,7 +2022,7 @@ margin: 0;
     #nationalContestBG
     {
       width: 100%;
-      background-color: #FFF;
+      background-color: $primaryGray;
     }
 
 
@@ -2033,7 +2033,7 @@ margin: 0;
         font-size: 2em;
         padding-top: 60px;
         padding-bottom: 10px;
-        text-align: center;
+        text-align: left;
       }
 
       h3
@@ -2054,7 +2054,7 @@ margin: 0;
 #centreExcellenceBG
 {
 width: 100%;
-background-color: #FFF;
+background-color: $primaryWhite;
 }
 
 
@@ -2081,6 +2081,7 @@ p {
 margin: 0;
 }
 
+}
 }
 
 
@@ -2152,19 +2153,14 @@ ul {
 img
 {
   margin-bottom: 20px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 }
 
 
-/* Medium and up  */
-@media screen and (min-width: 40em) {
-
-
-
-
-}
-
-/* Large and up  */
+/* Meidum and up  */
 @media screen and (min-width: 40em) {
 
   #eventsTitle
@@ -2186,6 +2182,225 @@ img
 
 //
 //
+//
+//
+//
+//
+
+
+
+
+/*Tour Page*/
+
+.venue
+{
+  border-bottom: solid 1px #ccc;
+  margin-bottom: 20px;
+}
+
+.tour {
+    margin-top: 100px;
+    background-color: black;
+    background-image: url("../images/hero_bg4.jpg");
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-size: 110%;
+    height: 150px;
+    -webkit-transition: background 1s linear;
+    -moz-transition: background 1s linear;
+    -o-transition:background 1s linear;
+    transition: background 1s linear;
+
+
+  h1 {
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px; /*50px*/
+    margin-bottom: 20px;
+    font-family: $openSans;
+    font-weight: $bold;
+      font-size: 2.2em; /*2.8em*/
+  }
+}
+
+
+#tourInfo {
+
+  border-bottom: solid 1px #ccc;
+
+h2 {
+  font-family: $gentiumBook;
+  color: $primaryRed;
+    font-size: 1.4em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+    text-align: center;
+
+}
+p {
+
+    font-family: $gentiumBook;
+    color: $primaryGray;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+}
+
+
+.tourTitle {
+  h2 {
+    font-family: $openSans;
+    color: $primaryGray;
+    font-weight: $bold;
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+
+h3 {
+  font-family: $openSans;
+  color: $primaryGray;
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+}
+
+.tourBody {
+  img {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  ul {
+    list-style-type: none;
+    font-family: $openSans;
+    color: $primaryGray;
+    font-size: 1em;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+.tourPackages {
+
+background-color: white;
+margin-bottom: 20px;
+
+h2 {
+  margin-top: 20px;
+  font-family: $gentiumBook;
+  color: $primaryGray;
+  font-size: 1.2em;
+  font-weight: $bold;
+  text-align: center;
+
+}
+p
+{
+  font-family: $gentiumBook;
+  color: $primaryGray;
+  font-size: 1.2em;
+}
+}
+
+/* Medium and up  */
+@media screen and (min-width: 40em) {
+
+  .tour {
+
+
+    h1 {
+      margin-top: 50px; /*50px*/
+        font-size: 2.8em; /*2.8em*/
+    }
+  }
+
+
+  #tourInfo {
+
+  h2 {
+      font-size: 1.6em;
+  }
+
+}
+
+#ticketButton
+{
+  display: inline;
+  width: 45%;
+}
+
+.tourBody {
+
+  ul li {
+    margin-bottom: 10px;
+  }
+}
+
+
+}
+
+
+/* Large and up  */
+@media screen and (min-width: 60em) {
+  #ticketButton
+  {
+    display: inline;
+    width: 45%;
+  }
+
+  #tourInfo {
+  h2 {
+    text-align: left;
+  }
+}
+
+.tourTitle {
+  h2 {
+    text-align: left;
+  }
+
+h3 {
+  text-align: left;
+}
+}
+
+.tourBody {
+  img {
+    margin-top: 0px;
+    width: 100%;
+  }
+}
+
+.tourBody {
+
+  ul li {
+    margin-bottom: 15px;
+  }
+
+  ul {
+    margin-bottom: 33px;
+  }
+
+}
+}
+
+
+//
+//
+//
+//
+
+
+
+
 
 
 
