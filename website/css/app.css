@@ -1284,6 +1284,9 @@ a:hover {
     font-size: 1.2em;
     font-family: "Gentium Book Basic", serif; }
   #eventsInfo img {
+    margin-bottom: 20px;
+    display: block;
+    margin: 0 auto;
     margin-bottom: 20px; }
 
 /* Meidum and up  */
