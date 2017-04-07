@@ -899,7 +899,11 @@ img:hover
       margin-bottom: 60px;
     }
 
-
+#heroSocial img
+{
+  background-color: rgba(100, 100, 100, 0.7);
+padding: 10px;
+}
 
   /*Nav*/
 
@@ -1277,6 +1281,13 @@ p {
 
 }
 
+
+.otherPage
+{
+  margin-top: 100px;
+  display: none;
+}
+
 #aboutThumbBG
 {
   width: 100%;
@@ -1338,7 +1349,17 @@ img:hover {
   border-bottom: 1px solid #CCC;
   background-color: #fafafa; }
 
-#summitSeriesCon h2 {
+  #summitSeriesCopy p
+  {
+    line-height: 33px;
+  }
+
+#summitSeriesCon
+{
+  margin-top: 120px;
+}
+
+h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   color: #282828;
@@ -1402,20 +1423,20 @@ img:hover {
   100% {
     box-shadow: 0 0 25px rgba(212, 34, 42, 0.7); } }
 #circle0 {
-  top: 465px;
-  left: 9%; }
+  top: 598px;
+  left: 70%; }
 
 #circle1 {
-  top: 530px;
-  left: 40%; }
-
-#circle2 {
   top: 650px;
   left: 64%; }
 
+#circle2 {
+  top: 530px;
+  left: 40%; }
+
 #circle3 {
-  top: 598px;
-  left: 70%; }
+  top: 465px;
+  left: 9%; }
 
 .boxes {
   width: 240px;
@@ -1423,7 +1444,7 @@ img:hover {
   background: rgba(255, 255, 255, 0.7);
   padding: 20px;
   position: absolute;
-  opacity: 0;
+  display: none;
  }
 
 .boxes img {
@@ -1442,8 +1463,15 @@ img:hover {
     left: 40%; }
 
   #info3 {
-    top: 65px;
-    left: 9%; }
+    top: 25px;
+    left: 9%;
+  visibility: hidden;
+}
+
+  #circle3:hover + #info3
+  {
+    visibility: visible;
+  }
 
 #summitLocationsBG{
   margin-top: 0px;
@@ -1465,7 +1493,9 @@ text-transform: uppercase;
 margin-bottom: 20px; }
 
 #summitSeriesInfo {
-  margin-top: 20px; }
+  margin-top: 20px;
+}
+
   #summitSeriesInfo h3 {
     font-size: 1.125em;
     text-align: center;
@@ -1473,8 +1503,21 @@ margin-bottom: 20px; }
     color: #282828;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
+    color: $primaryRed;
 }
+
+#summitSeriesInfo h4 {
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  color: $primaryGray;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+
 
 #summitLocations {
     border-bottom: 1px solid #CCC;
@@ -1485,6 +1528,12 @@ margin-bottom: 20px; }
         margin: 0 auto;
     }
 }
+
+#team
+{
+  margin-top: 30px;
+}
+
 
 #team
 {
@@ -1513,45 +1562,7 @@ th {
 
 }
 
-#table1Container
-{
-  max-height: 0px;
-  overflow: hidden;
-  -webkit-transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  -o-transition: all .2s linear;
-  transition: all .2s linear;
-}
 
-#table2Container
-{
-  max-height: 0px;
-  overflow: hidden;
-  -webkit-transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  -o-transition: all .2s linear;
-  transition: all .2s linear;
-}
-
-#table3Container
-{
-  max-height: 0px;
-  overflow: hidden;
-  -webkit-transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  -o-transition: all .2s linear;
-  transition: all .2s linear;
-}
-
-#table4Container
-{
-  max-height: 0px;
-  overflow: hidden;
-  -webkit-transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  -o-transition: all .2s linear;
-  transition: all .2s linear;
-}
 
 .teamButton
 {
@@ -1568,11 +1579,45 @@ th {
   background-color: $primaryGray;
 }
 
+#teamCon
+{
+  margin-top: 20px;
+}
+
+#teamCon h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #282828;
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+margin-top: 100px; }
+
+  #teamPhoto img
+  {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+
 //
 //
 
 /* Medium and up - 1024px */
 @media screen and (min-width: 40em) {
+
+  #teamCon h2
+  {
+    margin-top: 0px;
+  }
+
+  .otherPage
+  {
+    margin-top: 100px;
+    display: block;
+  }
 
 
 .aboutHero {
@@ -1598,11 +1643,35 @@ p {
 #summitSeriesInfo h3 {
     font-size: 1.75em;
 }
+
+#summitSeriesCon
+{
+  margin-top: 20px;
+}
+
+#summitSeriesCon h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #282828;
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px; }
+
+#summitLocations img {
+  margin-top: 60px;
+}
+
 }
 
 /* Large and up - 1024px */
 @media screen and (min-width: 60em) {
 
+
+  #summitSeriesCon h2 {
+
+    font-size: 2.2em;
+    margin-bottom: 40px; }
 
 .aboutHero {
   background-image: url("../images/team_photo_large.jpg");
