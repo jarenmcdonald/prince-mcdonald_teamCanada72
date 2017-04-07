@@ -984,6 +984,43 @@ a:hover {
   top: 65px;
   left: 9%; }
 
+#summitLocationsBG {
+  margin-top: 0px;
+  font-family: "Gentium Book Basic", serif;
+  font-size: 1.2em;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid #CCC;
+  background-color: #fafafa; }
+
+#summitLocationsCon h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #282828;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px; }
+
+#summitSeriesInfo {
+  margin-top: 20px; }
+
+#summitSeriesInfo h3 {
+  font-size: 1.125em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #282828;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 25px; }
+
+#summitLocations {
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 20px; }
+  #summitLocations img {
+    display: block;
+    margin: 0 auto; }
+
 #team table {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
@@ -1054,7 +1091,10 @@ a:hover {
       font-size: 1.5em;
       width: 80%;
       margin: 0 auto;
-      margin-bottom: 100px; } }
+      margin-bottom: 100px; }
+
+  #summitSeriesInfo h3 {
+    font-size: 1.75em; } }
 /* Large and up - 1024px */
 @media screen and (min-width: 60em) {
   .aboutHero {
