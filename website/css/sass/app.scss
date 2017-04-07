@@ -1424,18 +1424,30 @@ img:hover {
   background: rgba(255, 255, 255, 0.7);
   padding: 20px;
   position: absolute;
-  opacity: 0; }
+  opacity: 1;
+ }
 
 .boxes img {
   margin-bottom: 20px; }
 
 #info0 {
-  top: 50px;
+  top: 198px;
   left: 70%; }
 
 #info1 {
-  top: 50px;
-  left: 2%; }
+  top: 250px;
+  left: 64%; }
+
+  #info2 {
+    top: 130px;
+    left: 40%; }
+
+  #info3 {
+    top: 65px;
+    left: 9%; }
+
+
+
 
 #team
 {
