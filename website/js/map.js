@@ -1,6 +1,6 @@
 $(document).foundation();
 
-/*(function(){
+(function(){
 	"use strict";
 
 	var circles = document.querySelectorAll(".circle");
@@ -26,5 +26,5 @@ $(document).foundation();
 		circles[i].addEventListener("mouseover", showInfo, false);
 		circles[i].addEventListener("mouseout", hideInfo, false);
 	}
-*/
+
 })();

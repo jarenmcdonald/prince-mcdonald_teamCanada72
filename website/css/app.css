@@ -963,7 +963,7 @@ a:hover {
   background: rgba(255, 255, 255, 0.7);
   padding: 20px;
   position: absolute;
-  opacity: 1; }
+  opacity: 0; }
 
 .boxes img {
   margin-bottom: 20px; }
