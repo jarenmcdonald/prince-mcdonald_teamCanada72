@@ -1422,6 +1422,7 @@ h2 {
     box-shadow: 0 0 2px rgba(212, 34, 42, 0.7); }
   100% {
     box-shadow: 0 0 25px rgba(212, 34, 42, 0.7); } }
+
 #circle0 {
   top: 598px;
   left: 70%; }
@@ -1443,8 +1444,7 @@ h2 {
   height: 420px;
   background: rgba(255, 255, 255, 0.7);
   padding: 20px;
-  position: absolute;
-  display: none;
+  opacity: 0;
  }
 
 .boxes img {
@@ -1465,13 +1465,7 @@ h2 {
   #info3 {
     top: 25px;
     left: 9%;
-  visibility: hidden;
 }
-
-  #circle3:hover + #info3
-  {
-    visibility: visible;
-  }
 
 #summitLocationsBG{
   margin-top: 0px;
